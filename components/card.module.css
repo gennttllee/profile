@@ -21,7 +21,7 @@
     animation: mover;
     animation-duration: 1s;
     position: relative;
-    animation-delay: .1s;
+    animation-delay: .5s;
 }
 
 @keyframes mover {
@@ -65,6 +65,7 @@
 
 .p1 {
     margin: 1rem 0;
+    line-height: 2;
 }
 
 @media screen and (min-width: 1000px) {
@@ -79,6 +80,10 @@
         padding: 2rem 3rem;
         height: 29rem;
     }
+
+    .p1{
+        line-height: normal;
+    }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1000px) {
@@ -87,6 +92,10 @@
         height: 25rem;
         display: inline-block;
         margin: 2rem 2rem;
+    }
+
+    .p1{
+        line-height: normal;
     }
 
     .container {
@@ -106,5 +115,9 @@
     .container {
         padding: 2rem 3rem;
         height: 29rem;
+    }
+
+    .p1{
+        line-height: normal;
     }
 }

@@ -11,6 +11,7 @@ const Footer = () => {
         </div>
         <h1 className={styles.h1}> Mark Williams</h1>
         <Contacts />
+        <p> Email : Udooto72@gmail.com</p>
         <p className={styles.p1}> <span className='material-icons'> copyright</span> {year}  All rights reserved by Mark Williams</p>
     </div>
 };
