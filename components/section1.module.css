@@ -1,0 +1,137 @@
+.container {
+    background: rgba(0, 0, 0, 0.383) url("../public/static/img-2.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 35rem;
+}
+
+.empt {
+    height: 9rem;
+}
+
+.h1 {
+    color: white;
+    font-size: 3.6rem;
+    display: block;
+    text-align: center;
+}
+
+.span1 {
+    animation: move-down;
+    animation-duration: 1s;
+    position: relative;
+    text-align: center;
+    display: block;
+}
+
+.span2 {
+    display: block;
+    position: relative;
+    text-align: center;
+    animation: move-down;
+    animation-duration: 2s;
+    animation-delay: 0.1s;
+}
+
+@keyframes move-down {
+    from {
+        top: -10rem;
+        color: rgb(107, 47, 3);
+    }
+
+    to {
+        top: 0rem;
+    }
+}
+
+.main_div {
+    margin: 1rem auto;
+    width: fit-content;
+    overflow: hidden;
+    font-size: 2rem;
+}
+
+.first_div{
+    display: inline-block;
+    color: white;
+    overflow: hidden;
+    margin: 0 9px 0 0;
+}
+
+.second_div{
+    display: inline-block;
+    color: orange;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.p1{
+    animation: moving;
+    position: relative;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border-style: solid;
+    border-width: 0 5px 0 0;
+    width: fit-content;
+}
+
+@keyframes moving {
+    0% {left:-15rem}
+    50% {left:0}
+    100% {left:-15rem}
+}
+
+.btn {
+    margin: 2rem auto;
+    display: block;
+    text-align: center;
+    width: 12rem;
+    height: 3.3rem;
+    color: red;
+    font-size: 1.3rem;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+}
+
+.tag{
+    color: red;
+}
+
+.tag:hover{
+    color: white;
+}
+
+
+.btn:hover {
+    color: white;
+    background-color: red;
+    animation: btnhov;
+    animation-duration: 1s;
+    animation-delay: 0.1s;
+    position: relative;
+}
+
+@keyframes btnhov {
+    0% {
+        top: -1rem;
+    }
+
+    100% {
+        top: 0rem;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .h1 {
+        font-size: 6rem;
+    }
+
+    .container {
+        height: 40rem;
+    }
+
+    .empt{
+        height:5rem;
+    }
+}

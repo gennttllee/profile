@@ -1,0 +1,21 @@
+.para1{
+    color: red;
+    width: 100%;
+    text-align: center;
+    padding: 2px;
+}
+
+.container{
+    text-align: centre;
+    margin: 5rem auto ;
+    padding-bottom: 6rem;
+    border-width: 0 0 .1rem;
+    border-style: solid;
+    border-color: rgba(128, 128, 128, 0.26);
+}
+
+.h1{
+    text-align: center;
+    margin: 0.5rem auto 1rem;
+    font-size: 4rem;
+}

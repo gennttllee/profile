@@ -1,0 +1,37 @@
+.main {
+    margin: 4rem 0 0;
+    padding: 2rem;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    border-color: rgba(128, 128, 128, 0.212);
+    animation: moving;
+    position: relative;
+    animation-duration: 1s;
+    animation-delay: 0.1s;
+}
+
+@keyframes moving {
+    from {
+        bottom: -20rem;
+    }
+
+    to {
+        bottom: 0;
+    }
+}
+
+.img {
+    width: fit-content;
+    overflow: hidden;
+    margin: 1rem auto 1.5rem;
+    border-radius: 5rem;
+}
+
+.p1 {
+    margin: 0 0 1rem;
+    padding: 5px;
+}
+
+.h1 {
+    margin: 1rem 0 0;
+}

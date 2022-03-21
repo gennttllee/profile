@@ -1,0 +1,110 @@
+.container {
+    height: 70vh;
+    padding: 2rem;
+    text-align: left;
+}
+
+.cover{
+    height: 50vh;
+    margin: 2rem 1rem;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right,
+    rgba(188, 188, 189, 0.212),
+    rgba(212, 212, 212, 0.507),
+    rgb(255, 255, 255));
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.103);
+}
+
+.main_div {
+    overflow: hidden;
+    animation: mover;
+    animation-duration: 1s;
+    position: relative;
+    animation-delay: .1s;
+}
+
+@keyframes mover {
+    from {
+        bottom: -100rem;
+    }
+
+    to {
+        bottom: 0;
+    }
+}
+
+.container:hover {
+    background-image: none;
+    background-image: none;
+    animation: move-up;
+    animation-duration: 0.7s;
+    position: relative;
+}
+
+@keyframes move-up {
+    from {
+        top: 0rem;
+        background-color: red;
+        color: white;
+    }
+
+    to {
+        top: -2rem;
+        background-color: red;
+        color: white;
+    }
+}
+
+.spanner {
+    color: red;
+    width: 2rem;
+    margin: 2rem 0 2rem 1rem;
+    transform: scale(2);
+}
+
+.p1 {
+    margin: 1rem 0;
+}
+
+@media screen and (min-width: 1000px) {
+    .cover {
+        width: 25%;
+        height: 25rem;
+        display: inline-block;
+        margin: 2rem 1rem;
+    }
+
+    .container {
+        padding: 2rem 3rem;
+        height: 29rem;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+    .cover {
+        width: 35%;
+        height: 25rem;
+        display: inline-block;
+        margin: 2rem 2rem;
+    }
+
+    .container {
+        padding: 2rem 3rem;
+        height: 29rem;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    .cover {
+        width: 35%;
+        height: 25rem;
+        display: inline-block;
+        margin: 2rem 1rem;
+    }
+
+    .container {
+        padding: 2rem 3rem;
+        height: 29rem;
+    }
+}

@@ -1,0 +1,132 @@
+.container {
+    padding: 0 2rem;
+}
+
+.cover {
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.103);
+    padding: 0 1rem;
+    margin-bottom: 4rem;
+    height: 29rem;
+    overflow: hidden;
+}
+
+.cover1 {
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.103);
+    padding: 0 1rem;
+    overflow: hidden;
+}
+
+.first_div {
+    margin: 0 0 2rem;
+    position: relative;
+    animation: move-up;
+    animation-duration: 1s;
+}
+
+@keyframes move-up {
+    from {
+        bottom: -100rem;
+    }
+
+    to {
+        bottom: 0rem;
+    }
+}
+
+.second_div {
+    padding: 0 0 2rem;
+    animation: move-up;
+    animation-duration: 1s;
+    position: relative;
+    animation-delay: 0.5s;
+}
+
+.h1 {
+    margin: 1rem 0 0.3rem;
+    color: red;
+}
+
+.para2 {
+    margin: 0 0 1rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.para1 {
+    line-height: 3;
+    letter-spacing: 2px;
+    text-align: left;
+    padding: 0 1rem;
+}
+
+.para3 {
+    line-height: 1.5;
+    text-align: left;
+    margin: 0 0 1rem;
+}
+
+.tester {
+    color: orange;
+    text-decoration: underline;
+    padding: 1rem;
+}
+
+.tester:hover {
+    color: red;
+}
+
+@media screen and (min-width: 800px) {
+    .cover {
+        width: 40%;
+        display: inline-block;
+        margin: 0 2rem 1rem;
+        overflow: hidden;
+    }
+
+    .cover1 {
+        width: 40%;
+        display: inline-block;
+        margin: 02rem;
+        height: 24rem;
+        overflow: hidden;
+    }
+
+    .para1 {
+        line-height: 4;
+        letter-spacing: 2px;
+        text-align: left;
+        padding: 0 1rem;
+    }
+
+    .first_div {
+        animation: move-right;
+        animation-duration: 1s;
+        position: relative;
+    }
+
+    .second_div {
+        animation: move-left;
+        animation-duration: 1s;
+        position: relative;
+    }
+
+    @keyframes move-right {
+        from {
+            left: -200rem;
+        }
+
+        to {
+            left: 0;
+        }
+    }
+
+    @keyframes move-left {
+        from {
+            right: -200rem;
+        }
+
+        to {
+            right: 0;
+        }
+    }
+}

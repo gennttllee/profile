@@ -1,0 +1,281 @@
+.main {
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.divider{
+    position: relative;
+    animation: move-up;
+    animation-duration: 1s;
+    overflow: hidden;
+}
+
+.cover{
+    margin: 0 auto 5rem;
+    overflow: hidden;
+}
+
+.cover1{
+    margin: 0 auto 5rem;
+    overflow: hidden;
+}
+
+.divider1{
+    position: relative;
+    animation: move-up;
+    animation-duration: 1s;
+    overflow: hidden;
+    animation-delay: .5s;
+}
+
+@keyframes move-up{
+    from{bottom:-100rem}
+    to {bottom:0rem}
+}
+
+.html {
+    margin: 1rem auto;
+    font-size: .7rem;
+}
+
+.p1 {
+    color: red;
+}
+
+.h1 {
+    padding: 10px 0;
+}
+
+@keyframes move-right {
+    from {
+        left: -100%
+    }
+
+    to {
+        left: 0%
+    }
+}
+
+.div1 {
+    height: 10px;
+    background-color: rgba(128, 128, 128, 0.294);
+    padding-top: 2px;
+    margin: 0 auto 1.8rem;
+}
+
+.jnr1 {
+    background-image: linear-gradient(to right, white, red);
+    width: 95%;
+    height: 6px;
+    animation: move-right;
+    animation-duration: 1s;
+    position: relative;
+    animation-delay: .5s;
+}
+
+.span1 {
+    float: right;
+    margin-right: 5%;
+    animation: move-right;
+    animation-duration: 1s;
+    position: relative;
+    animation-delay: .5s;
+}
+
+.div2 {
+    height: 10px;
+    background-color: rgba(128, 128, 128, 0.294);
+    padding-top: 2px;
+    margin: 0 auto 1.8rem;
+}
+
+.jnr2 {
+    background-image: linear-gradient(to right, white, red);
+    width: 85%;
+    height: 6px;
+    animation: move-right;
+    animation-duration: 1s;
+    position: relative;
+    animation-delay: .6s;
+}
+
+.span2 {
+    float: right;
+    margin-right: 15%;
+    animation: move-right;
+    animation-duration: 1s;
+    position: relative;
+    animation-delay: .6s;
+}
+
+
+.div3 {
+    height: 10px;
+    background-color: rgba(128, 128, 128, 0.294);
+    padding-top: 2px;
+    margin: 0 auto 1.8rem;
+}
+
+.jnr3 {
+    background-image: linear-gradient(to right, white, red);
+    width: 75%;
+    height: 6px;
+    animation: move-right;
+    animation-duration: 1s;
+    position: relative;
+    animation-delay: .7s;
+}
+
+.span3 {
+    float: right;
+    margin-right: 25%;
+    animation: move-right;
+    animation-duration: 1s;
+    position: relative;
+    animation-delay: .7s;
+}
+
+
+.div4 {
+    height: 10px;
+    background-color: rgba(128, 128, 128, 0.294);
+    padding-top: 2px;
+    margin: 0 auto 1.8rem;
+}
+
+.jnr4 {
+    background-image: linear-gradient(to right, white, red);
+    width: 85%;
+    height: 6px;
+    animation: move-right;
+    animation-duration: 1s;
+    position: relative;
+    animation-delay: .8s;
+}
+
+.span4 {
+    float: right;
+    margin-right: 15%;
+    animation: move-right;
+    animation-duration: 1s;
+    position: relative;
+    animation-delay: .8s;
+}
+
+
+.div5 {
+    height: 10px;
+    background-color: rgba(128, 128, 128, 0.294);
+    padding-top: 2px;
+    margin: 0 auto 1.8rem;
+}
+
+.jnr5 {
+    background-image: linear-gradient(to right, white, red);
+    width: 60%;
+    height: 6px;
+    animation: move-right;
+    animation-duration: 1s;
+    position: relative;
+    animation-delay: .9s;
+}
+
+.span5 {
+    float: right;
+    margin-right: 40%;
+    animation: move-right;
+    animation-duration: 1s;
+    position: relative;
+    animation-delay: .9s;
+}
+
+@media screen and (min-width:800px) {
+    .divider{
+        animation: none;
+    }
+
+    .cover{
+        width: 40%;
+        display: inline-block;
+        margin: 0 5%;
+        overflow: hidden;
+    }
+
+    .divider1{
+        animation: none;
+    }
+
+    .cover1{
+        width: 40%;
+        display: inline-block;
+        margin: 0 5%;
+        overflow: hidden;
+    }
+
+    .jnr1{
+        animation: move-right;
+        animation-duration: 1s;
+        position: relative;
+        animation-delay: 0;
+    }
+    .span1 {
+        animation: move-right;
+        animation-duration: 1s;
+        position: relative;
+        animation-delay: 0;
+    }
+
+    .jnr2 {
+        animation: move-right;
+        animation-duration: 1s;
+        position: relative;
+        animation-delay: .1s;
+    }
+    .span2 {
+        animation: move-right;
+        animation-duration: 1s;
+        position: relative;
+        animation-delay: .1s;
+    }
+
+    .jnr3 {
+        animation: move-right;
+        animation-duration: 1s;
+        position: relative;
+        animation-delay: .2s;
+    }
+    .span3 {
+        animation: move-right;
+        animation-duration: 1s;
+        position: relative;
+        animation-delay: .2s;
+    }
+
+    .jnr4 {
+        animation: move-right;
+        animation-duration: 1s;
+        position: relative;
+        animation-delay: .3s;
+    }
+    .span4 {
+        animation: move-right;
+        animation-duration: 1s;
+        position: relative;
+        animation-delay: .3s;
+    }
+
+    .jnr5 {
+        animation: move-right;
+        animation-duration: 1s;
+        position: relative;
+        animation-delay: .4s;
+    }
+    .span5 {
+        animation: move-right;
+        animation-duration: 1s;
+        position: relative;
+        animation-delay: .4s;
+    }
+}

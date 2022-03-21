@@ -1,0 +1,62 @@
+.load_div{
+    width: 100%;
+    height: fit-content;
+    margin: 3rem 0;
+}
+
+.p1{
+    margin: 5rem auto 0;
+    color: red;
+}
+
+.h1{
+    margin: 0 auto 3rem;
+    font-size: 4rem;
+}
+
+.btn:focus{
+    color: red;
+}
+
+.btn{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border: none;
+    background-image: linear-gradient(to bottom left, white, rgba(241, 239, 239, 0.034),white);
+    height: 4rem;
+    font-size: 1.2rem;
+    box-shadow: 5px 4px 5px 5px rgba(0, 0, 0, 0.048);
+}
+
+.diver{
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.btn:active{
+    box-shadow: none;
+}
+
+.btn:hover{
+    color: red;
+    z-index: 1;
+    z-index: 1;
+    position: relative;
+}
+
+@media screen and (min-width:600px){
+    .btn{
+        display: inline-block;
+        width: 20%;
+        margin: 0 10px;
+    }
+}
+
+@media screen and (min-width:800px) and ( max-width:900px){
+    .btn{
+        display: inline-block;
+        width: 22%;
+        margin: 0 10px;
+    }
+}
