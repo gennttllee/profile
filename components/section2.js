@@ -18,7 +18,7 @@ const Section2 =()=>{
         <Card
             spanny = 'language'
             h1 = 'Html, Css & Javascript '
-            p1 = 'These 3 are the core technologies for web development, as a web developer these 2 technologies are essential as they are the foundation of web development'
+            p1 = 'These 3 are the core technologies for web development, as a web developer these 3 technologies are essential as they are the foundation of web development'
         />
     </div>
 }

@@ -44,7 +44,7 @@ const Skills = () => {
             <div className={styles.div3}>
                 <div className={styles.jnr3}></div>
             </div>
-            <p className={styles.html} >Hardwrk <span className={styles.span4} >85%</span></p>
+            <p className={styles.html} >Hardwork <span className={styles.span4} >85%</span></p>
             <div className={styles.div4}>
                 <div className={styles.jnr4}></div>
             </div>
