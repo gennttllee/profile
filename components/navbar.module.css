@@ -1,4 +1,4 @@
-.container{
+.container {
     margin: 0 0 30rem;
     text-align: centre;
     height: fit-content;
@@ -9,27 +9,27 @@
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.151);
 }
 
-.img{
+.img {
     border-radius: 100%;
     overflow: hidden;
     width: fit-content;
-    height:3rem;
+    height: 3rem;
     float: left;
     margin-left: 2rem;
 }
 
-.list{
+.list {
     display: none;
     text-align: center;
 }
 
-.btn_close{
+.btn_close {
     display: none;
 }
 
-.btn_menu{
+.btn_menu {
     float: right;
-    margin: 3px 10px  0 0;
+    margin: 3px 10px 0 0;
     color: red;
     border: none;
     width: 3rem;
@@ -37,32 +37,37 @@
     background-color: transparent;
 }
 
-.btn_menu:hover{
+.btn_menu:hover {
     background-color: red;
     color: white;
     border-radius: 100%;
 }
 
-.btn_close{
+.btn_close {
     margin: 5rem auto 0;
 }
 
-.responsive{
+.responsive {
     background-color: rgba(255, 255, 255, 0.87);
     position: fixed;
     z-index: 1;
     width: 50%;
     height: 100%;
     animation: slide-right;
-    animation-duration: .6s;
+    animation-duration: 0.6s;
 }
 
-@keyframes slide-right{
-    from {left:-30%}
-    to {left:0%}
+@keyframes slide-right {
+    from {
+        left: -30%;
+    }
+
+    to {
+        left: 0%;
+    }
 }
 
-.responsive .btn_close{
+.responsive .btn_close {
     display: block;
     color: red;
     border: none;
@@ -70,45 +75,44 @@
     height: 4rem;
 }
 
-.responsive .btn_close:hover{
+.responsive .btn_close:hover {
     background-color: red;
     color: white;
     border-radius: 100%;
 }
 
-.responsive .btn_menu{
+.responsive .btn_menu {
     display: none;
 }
 
-.responsive .list{
+.responsive .list {
     display: block;
 }
 
-.responsive .list_items:last-child{
+.responsive .list_items:last-child {
     margin-bottom: 3rem;
 }
 
-.responsive .list_items:first-child{
+.responsive .list_items:first-child {
     margin-top: 7rem;
 }
 
-
-.responsive .list_items{
+.responsive .list_items {
     list-style: none;
-    margin:  1.5rem 0;
+    margin: 1.5rem 0;
     text-align: left;
     font-size: 1.5rem;
 }
 
-.responsive .img{
+.responsive .img {
     margin-top: 2rem;
 }
 
-.slide_back .list{
+.slide_back .list {
     display: block;
 }
 
-.slide_back{
+.slide_back {
     background-color: rgba(255, 255, 255, 0.87);
     position: fixed;
     z-index: 1;
@@ -118,12 +122,17 @@
     animation-duration: 1s;
 }
 
-@keyframes slide-left{
-    from {left:0%}
-    to {left:-60%}
+@keyframes slide-left {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: -60%;
+    }
 }
 
-.slide_back .btn_close{
+.slide_back .btn_close {
     display: block;
     color: red;
     border: none;
@@ -131,64 +140,62 @@
     height: 4rem;
 }
 
-.slide_back .btn_close:hover{
+.slide_back .btn_close:hover {
     background-color: red;
     color: white;
     border-radius: 100%;
 }
 
-.slide_back .btn_menu{
+.slide_back .btn_menu {
     display: none;
 }
 
-.slide_back .list{
+.slide_back .list {
     display: block;
 }
 
-.slide_back .list_items:last-child{
+.slide_back .list_items:last-child {
     margin-bottom: 3rem;
 }
 
-.slide_back .list_items:first-child{
+.slide_back .list_items:first-child {
     margin-top: 7rem;
 }
 
-
-.slide_back .list_items{
+.slide_back .list_items {
     list-style: none;
-    margin:  1.5rem 0;
+    margin: 1.5rem 0;
     text-align: left;
     font-size: 1.5rem;
 }
 
-.slide_back .img{
+.slide_back .img {
     margin-top: 2rem;
 }
 
-@media screen and (min-width:700px) {
-    .btn_menu{
+@media screen and (min-width: 700px) {
+    .btn_menu {
         display: none;
     }
 
-    .list{
+    .list {
         display: flex;
         float: right;
         text-align: center;
         list-style: none;
     }
 
-    .list_items{
-        margin: .5rem 2rem;
+    .list_items {
+        margin: 0.5rem 2rem;
         color: red;
         font-size: 1.3rem;
     }
 
-    .list_items:hover{
+    .list_items:hover {
         color: orange;
-        transform: scale(2);
     }
 
-    .container{
+    .container {
         box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.151);
     }
 }
