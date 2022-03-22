@@ -1,3 +1,5 @@
+import { getDomainLocale } from 'next/dist/shared/lib/router/router'
+
 require('dotenv').config()
 
 export default function send(req, res) {
@@ -6,15 +8,15 @@ export default function send(req, res) {
         port: 465,
         host: "smtp.gmail.com",
         auth: {
-            user: process.env.EMAIL,
+            user: 'markwilliamz1995@gmail.com',
             pass: process.env.PASSWORD,
         },
         secure: true,
     })
 
     const mailData = {
-        from: process.env.EMAIL,
-        to: process.env.UDO,
+        from:"markwilliamz1995@gmail.com",
+        to: 'udooto72@gmail.com',
         subject: req.body.subject,
         text: req.body.message + " | Sent from: " + req.body.email,
         html: `<div>${req.body.message}</div><p>Sent from:
