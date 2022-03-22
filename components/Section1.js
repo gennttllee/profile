@@ -17,7 +17,7 @@ const Section1 = () => {
             </div>
         </div>
         <button className={styles.btn}>
-        <a className={styles.tag} href='#footer'> Contact Me</a>
+        <a className={styles.tag} href='#forms'> Contact Me</a>
         </button>
     </div>
 }

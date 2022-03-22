@@ -5,6 +5,7 @@ import Section1 from '../components/Section1'
 import Section2 from '../components/section2'
 import Resume from '../components/Resume'
 import Footer from '../components/Footer'
+import Forms from '../components/Forms'
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Section1 />
       <Section2 />
       <Resume />
+      <Forms />
       <Footer />
     </div>
   )

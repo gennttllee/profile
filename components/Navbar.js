@@ -36,7 +36,7 @@ const Navbar = () => {
                 <a href='#resume'>Resume</a>
             </li>
             <li className={styles.list_items}>
-                <a href='#footer'> Contact Me</a>
+                <a href='#forms'> Contact Me</a>
             </li>
         </ul>
         <button id='menu' onClick={menu} className={styles.btn_menu}>
