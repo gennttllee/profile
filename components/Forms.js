@@ -77,18 +77,20 @@ const Forms = () => {
                 <Contacts />
             </div>
             <div className={styles.container1}>
-                <label htmlFor='name' className={styles.label} >Full name</label>
-                <input className={styles.first} onChange={onFa} type='text' name='name' placeholder='first name' value={fname} required></input>
-                <input className={styles.last} onChange={onLa} type='text' placeholder='last name' value={lname} required></input>
-                <label htmlFor='number' className={styles.label1}>Phone number</label>
-                <input className={styles.text} type='tel' onChange={onNumb} name='number' value={number} placeholder='Phone number'></input>
-                <label htmlFor='email' className={styles.label1}>Email</label>
-                <input className={styles.text} type='email' onChange={onEma} placeholder='Email' value={email} name='email' required></input>
-                <label htmlFor='subject' className={styles.label1}>Subject</label>
-                <input className={styles.text} type='text' onChange={onSub} placeholder='subject' value={subject} name='subject'></input>
-                <label htmlFor='message' className={styles.label1}>Your message</label>
-                <textarea className={styles.area} placeholder='Type your message here' onChange={place} name="message" value={message} required></textarea>
-                <input className={styles.btn} type='submit' onClick={handleClick} />
+                <form method='POST'>
+                    <label htmlFor='name' className={styles.label} >Full name</label>
+                    <input className={styles.first} onChange={onFa} type='text' name='name' placeholder='first name' value={fname} required></input>
+                    <input className={styles.last} onChange={onLa} type='text' placeholder='last name' value={lname} required></input>
+                    <label htmlFor='number' className={styles.label1}>Phone number</label>
+                    <input className={styles.text} type='tel' onChange={onNumb} name='number' value={number} placeholder='Phone number'></input>
+                    <label htmlFor='email' className={styles.label1}>Email</label>
+                    <input className={styles.text} type='email' onChange={onEma} placeholder='Email' value={email} name='email' required></input>
+                    <label htmlFor='subject' className={styles.label1}>Subject</label>
+                    <input className={styles.text} type='text' onChange={onSub} placeholder='subject' value={subject} name='subject'></input>
+                    <label htmlFor='message' className={styles.label1}>Your message</label>
+                    <textarea className={styles.area} placeholder='Type your message here' onChange={place} name="message" value={message} required></textarea>
+                    <input className={styles.btn} type='submit' onClick={handleClick} />
+                </form>
             </div>
         </div>
     </div>
