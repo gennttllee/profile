@@ -60,20 +60,18 @@ const Forms = () => {
                 <Contacts />
             </div>
             <div className={styles.container1}>
-                <form>
-                    <label htmlFor='name' className={styles.label} >Full name</label>
-                    <input className={styles.first} onChange={(e) => { setFname(e.target.value) }} type='text' name='name' placeholder='first name' required></input>
-                    <input className={styles.last} onChange={(e) => { setLname(e.target.value) }} type='text' placeholder='last name' required></input>
-                    <label htmlFor='number' className={styles.label1}>Phone number</label>
-                    <input className={styles.text} type='tel' onChange={(e) => { setNumber(e.target.value) }} name='number' placeholder='Phone number'></input>
-                    <label htmlFor='email' className={styles.label1}>Email</label>
-                    <input className={styles.text} type='email' onChange={(e) => { setEmail(e.target.value) }} placeholder='Email' name='email' required></input>
-                    <label htmlFor='subject' className={styles.label1}>Subject</label>
-                    <input className={styles.text} type='text' onChange={(e) => { setSubject(e.target.value) }} placeholder='subject' name='subject'></input>
-                    <label htmlFor='message' className={styles.label1}>Your message</label>
-                    <textarea className={styles.area} onChange={(e) => { setMessage(e.target.value) }} name="message" required></textarea>
-                    <input className={styles.btn} type='submit' onClick={(e)=>{handleSubmit(e)}}/>
-                </form>
+                <label htmlFor='name' className={styles.label} >Full name</label>
+                <input className={styles.first} onChange={(e) => { setFname(e.target.value) }} type='text' name='name' placeholder='first name' required></input>
+                <input className={styles.last} onChange={(e) => { setLname(e.target.value) }} type='text' placeholder='last name' required></input>
+                <label htmlFor='number' className={styles.label1}>Phone number</label>
+                <input className={styles.text} type='tel' onChange={(e) => { setNumber(e.target.value) }} name='number' placeholder='Phone number'></input>
+                <label htmlFor='email' className={styles.label1}>Email</label>
+                <input className={styles.text} type='email' onChange={(e) => { setEmail(e.target.value) }} placeholder='Email' name='email' required></input>
+                <label htmlFor='subject' className={styles.label1}>Subject</label>
+                <input className={styles.text} type='text' onChange={(e) => { setSubject(e.target.value) }} placeholder='subject' name='subject'></input>
+                <label htmlFor='message' className={styles.label1}>Your message</label>
+                <textarea className={styles.area} placeholder='Type your message here' onChange={(e) => { setMessage(e.target.value) }} name="message" required></textarea>
+                <input className={styles.btn} type='submit' onClick={(e) => { handleSubmit(e) }} />
             </div>
         </div>
     </div>
