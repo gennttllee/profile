@@ -77,7 +77,7 @@ const Forms = () => {
                 <Contacts />
             </div>
             <div className={styles.container1}>
-                <form method='POST'>
+                <form >
                     <label htmlFor='name' className={styles.label} >Full name</label>
                     <input className={styles.first} onChange={onFa} type='text' name='name' placeholder='first name' value={fname} required></input>
                     <input className={styles.last} onChange={onLa} type='text' placeholder='last name' value={lname} required></input>
