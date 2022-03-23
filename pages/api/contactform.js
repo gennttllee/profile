@@ -11,7 +11,6 @@ export default function send(req, res) {
             user: 'markwilliamz1995@gmail.com',
             pass:'7t2j/9:g',
         },
-        secure: true
     })
 
     const mailData = {
