@@ -29,7 +29,8 @@ const Forms = () => {
     const place = (e) => {
         setMessage(e.target.value)
     }
-    const handleClick =async () => {
+    const handleSubmit =async (e) => {
+        e.preventDefault()
         console.log('Sending')
         let data = {
             fname,
@@ -89,7 +90,7 @@ const Forms = () => {
                     <input className={styles.text} type='text' onChange={onSub} placeholder='subject' value={subject} name='subject'></input>
                     <label htmlFor='message' className={styles.label1}>Your message</label>
                     <textarea className={styles.area} placeholder='Type your message here' onChange={place} name="message" value={message} required></textarea>
-                    <input className={styles.btn} type='submit' onClick={handleClick} />
+                    <input className={styles.btn} type='submit' onClick={(e)=>{handleSubmit(e)}}/>
                 </form>
             </div>
         </div>
