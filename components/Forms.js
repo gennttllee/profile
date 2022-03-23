@@ -29,7 +29,7 @@ const Forms = () => {
     const place = (e) => {
         setMessage(e.target.value)
     }
-    const handleSubmit = () => {
+    function handleSubmit() {
         console.log('Sending')
         let data = {
             fname,
