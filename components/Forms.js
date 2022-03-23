@@ -2,6 +2,7 @@ import styles from './forms.module.css'
 import Image from 'next/image'
 import Contacts from './Contacts'
 import { useState } from 'react'
+import axios from 'axios'
 
 
 const Forms = () => {
@@ -29,36 +30,16 @@ const Forms = () => {
     const place = (e) => {
         setMessage(e.target.value)
     }
-    function handleSubmit() {
-        console.log('Sending')
-        let data = {
-            fname,
-            lname,
-            number,
-            email,
-            subject,
-            message
-        }
-        fetch('/api/contactform', {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json, text/plain, */*',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        }).then((res) => {
-            console.log('Response received')
-            if (res.status === 200) {
-                console.log('Response succeeded!')
-                setSubmitted(true)
-                setFname('')
-                setLname('')
-                setNumber('')
-                setEmail('')
-                setSubject('')
-                setBody('')
-            }
-        })
+    const handleSubmit = async () => {
+        axios.post('http://localhost:3000/api/contactform', { email, fname, lname, subject, number, message })
+            .then(
+                (res) => {
+                    alert('Send Mail To Mark Williams')
+                    setEmail('')
+                }
+            ).catch(
+                (e) => console.log(e)
+            )
     }
     return <div className={styles.main_div} id="forms">
         <p className={styles.contact}>CONTACT</p>
@@ -89,7 +70,7 @@ const Forms = () => {
                     <input className={styles.text} type='text' onChange={onSub} placeholder='subject' value={subject} name='subject'></input>
                     <label htmlFor='message' className={styles.label1}>Your message</label>
                     <textarea className={styles.area} placeholder='Type your message here' onChange={place} name="message" value={message} required></textarea>
-                    <input className={styles.btn} type='submit' onClick={handleSubmit}/>
+                    <input className={styles.btn} type='submit' onClick={handleSubmit} />
                 </form>
             </div>
         </div>

@@ -1,50 +1,36 @@
 
+import { SMTPClient } from 'emailjs';
 
-export default async function send(req, res) {
-    let nodemailer = require('nodemailer')
-    const transporter = nodemailer.createTransport({
-        port: 465,
-        host: "smtp.gmail.com",
-        auth: {
-            user: 'markwilliamz1995@gmail.com',
-            pass: '7t2j/9:g',
-        },
-        secure: true,
-    })
 
-    await new Promise((resolve, reject) => {
-        // verify connection configuration
-        transporter.verify(function (error, success) {
-            if (error) {
-                console.log(error);
-                reject(error);
-            } else {
-                console.log("Server is ready to take our messages");
-                resolve(success);
-            }
-        });
+export default function handler(req, res) {
+
+    const { email } = req.body;
+    // console.log(process.env)
+
+    const client = new SMTPClient({
+        user: 'markwilliamz1995@gmail.com',
+        password: '7t2j/9:g',
+        host: 'smtp.gmail.com',
+        ssl: true
     });
 
-    const mailData = {
-        from:"markwilliamz1995@gmail.com",
-        to: 'udooto72@gmail.com',
-        subject: req.body.subject,
-        text: req.body.message + " | Sent from: " + req.body.email,
-        html: `<div>${req.body.message}</div><p>Sent from:
-        ${req.body.email}</p> <p>Name : ${req.body.fname} ${req.body.lname}</p> <p> Telephone : ${req.body.number}</p>`
+    try {
+        client.send(
+            {
+                from: "markwilliamz1995@gmail.com",
+                to: 'udooto72@gmail.com',
+                subject: req.body.subject,
+                text:`${req.body.message}
+                Sent from: ${ req.body.fname} ${ req.body.lname}
+                Phone number: ${ req.body.number}
+                Email address: ${req.body.email}`,
+            }
+        )
+    }
+    catch (e) {
+        res.status(400).end(JSON.stringify({ message: "Error" }))
+        return;
     }
 
-    await new Promise((resolve, reject) => {
-        // send mail
-        transporter.sendMail(mailData, (err, info) => {
-            if (err) {
-                console.error(err);
-                reject(err);
-            } else {
-                console.log(info);
-                resolve(info);
-            }
-        });
-    });
-    res.status(200)
-};
+    res.status(200).end(JSON.stringify({ message: 'Send Mail' }))
+}
