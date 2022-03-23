@@ -9,7 +9,7 @@ export default function send(req, res) {
         host: "smtp.gmail.com",
         auth: {
             user: 'markwilliamz1995@gmail.com',
-            pass:'7t2j/9:g'
+            pass:'7t2j/9:g',
         },
         secure: true
     })
