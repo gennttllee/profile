@@ -29,7 +29,7 @@ const Forms = () => {
     const place = (e) => {
         setMessage(e.target.value)
     }
-    const handleClick = () => {
+    const handleClick =async () => {
         console.log('Sending')
         let data = {
             fname,
@@ -39,7 +39,7 @@ const Forms = () => {
             subject,
             message
         }
-        fetch('/api/contactform', {
+        await fetch('/api/contactform', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json, text/plain, */*',

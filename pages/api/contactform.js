@@ -1,10 +1,8 @@
-import { getDomainLocale } from 'next/dist/shared/lib/router/router'
-
-require('dotenv').config()
+const nodemailer = require('nodemailer')
 
 export default function send(req, res) {
-    let nodemailer = require('nodemailer')
     const transporter = nodemailer.createTransport({
+        service :'gmail',
         port: 465,
         host: "smtp.gmail.com",
         auth: {
