@@ -1,45 +1,19 @@
 import styles from './forms.module.css'
 import Image from 'next/image'
 import Contacts from './Contacts'
-import { useState } from 'react'
-import axios from 'axios'
+import emailjs from 'emailjs-com';
 
 
 const Forms = () => {
-    const [fname, setFname] = useState('')
-    const onFa = (e) => {
-        setFname(e.target.value)
-    }
-    const [lname, setLname] = useState('')
-    const onLa = (e) => {
-        setLname(e.target.value)
-    }
-    const [number, setNumber] = useState('')
-    const onNumb = (e) => {
-        setNumber(e.target.value)
-    }
-    const [email, setEmail] = useState('')
-    const onEma = (e) => {
-        setEmail(e.target.value)
-    }
-    const [subject, setSubject] = useState('')
-    const onSub = (e) => {
-        setSubject(e.target.value)
-    }
-    const [message, setMessage] = useState('')
-    const place = (e) => {
-        setMessage(e.target.value)
-    }
-    const handleSubmit = async () => {
-        axios.post('http://localhost:3000/api/contactform', { email, fname, lname, subject, number, message })
-            .then(
-                (res) => {
-                    alert('Send Mail To Mark Williams')
-                    setEmail('')
-                }
-            ).catch(
-                (e) => console.log(e)
-            )
+    const submitted = (e) => {
+        e.preventDefault();
+        emailjs.sendForm('markwilliamz1995@gmail.c', 'template_a2ul24s', e.target, 'jyIO1gciS2IyWyp9M')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+            e.target.reset();
     }
     return <div className={styles.main_div} id="forms">
         <p className={styles.contact}>CONTACT</p>
@@ -58,19 +32,19 @@ const Forms = () => {
                 <Contacts />
             </div>
             <div className={styles.container1}>
-                <form >
+                <form onSubmit={submitted} >
                     <label htmlFor='name' className={styles.label} >Full name</label>
-                    <input className={styles.first} onChange={onFa} type='text' name='name' placeholder='first name' value={fname} required></input>
-                    <input className={styles.last} onChange={onLa} type='text' placeholder='last name' value={lname} required></input>
+                    <input className={styles.first}  type='text' placeholder='first name' name='fname' required></input>
+                    <input className={styles.last}  type='text' placeholder='last name' name='lname' required></input>
                     <label htmlFor='number' className={styles.label1}>Phone number</label>
-                    <input className={styles.text} type='tel' onChange={onNumb} name='number' value={number} placeholder='Phone number'></input>
+                    <input className={styles.text} type='tel'  name='number'  placeholder='Phone number'></input>
                     <label htmlFor='email' className={styles.label1}>Email</label>
-                    <input className={styles.text} type='email' onChange={onEma} placeholder='Email' value={email} name='email' required></input>
+                    <input className={styles.text} type='email'  placeholder='Email'  name='email' required></input>
                     <label htmlFor='subject' className={styles.label1}>Subject</label>
-                    <input className={styles.text} type='text' onChange={onSub} placeholder='subject' value={subject} name='subject'></input>
+                    <input className={styles.text} type='text'  placeholder='subject'  name='subject'></input>
                     <label htmlFor='message' className={styles.label1}>Your message</label>
-                    <textarea className={styles.area} placeholder='Type your message here' onChange={place} name="message" value={message} required></textarea>
-                    <input className={styles.btn} type='submit' onClick={handleSubmit} />
+                    <textarea className={styles.area} placeholder='Type your message here' name="message" required></textarea>
+                    <input className={styles.btn} type='submit' value='send'  />
                 </form>
             </div>
         </div>
