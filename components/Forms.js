@@ -10,8 +10,10 @@ const Forms = () => {
         emailjs.sendForm('markwilliamz1995@gmail.c', 'template_a2ul24s', e.target, 'jyIO1gciS2IyWyp9M')
             .then((result) => {
                 console.log(result.text);
+                alert('sucessfull')
             }, (error) => {
                 console.log(error.text);
+                alert('error not sent')
             });
             e.target.reset();
     }
@@ -33,9 +35,11 @@ const Forms = () => {
             </div>
             <div className={styles.container1}>
                 <form onSubmit={submitted} >
-                    <label htmlFor='name' className={styles.label} >Full name</label>
+                <div className={styles.late}>
+                <label htmlFor='name' className={styles.label} >Full name</label>
                     <input className={styles.first}  type='text' placeholder='first name' name='fname' required></input>
                     <input className={styles.last}  type='text' placeholder='last name' name='lname' required></input>
+                </div>
                     <label htmlFor='number' className={styles.label1}>Phone number</label>
                     <input className={styles.text} type='tel'  name='number'  placeholder='Phone number'></input>
                     <label htmlFor='email' className={styles.label1}>Email</label>
