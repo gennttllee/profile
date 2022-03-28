@@ -1,11 +1,8 @@
 import Image from 'next/image'
 import styles from './navbar.module.css'
-import {useState} from 'react'
 
 
 const Navbar = () => {
-    const [scrol, setScrol] = useState(false)
-
     const menu = () => {
         let x = document.getElementById('container')
         if (x.className === styles.container) {

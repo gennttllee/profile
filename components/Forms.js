@@ -27,7 +27,7 @@ const Forms = () => {
                 </div>
                 <h2 className={styles.h1}>Mark Williams</h2>
                 <p className={styles.p}>Chief Operating Officer</p>
-                <p className={styles.p1}>I am available for freelance work via any of the options provided</p>
+                <p className={styles.p1}>I am available for freelance work contact me via any of the channels below</p>
                 <p className={styles.p2}>Phone: +2348020761320</p>
                 <p className={styles.p2}>Email: Udooto72@gmail.com</p>
                 <p className={styles.alt}> Alternatively :</p>
@@ -37,15 +37,15 @@ const Forms = () => {
                 <form onSubmit={submitted} >
                 <div className={styles.late}>
                 <label htmlFor='name' className={styles.label} >Full name</label>
-                    <input className={styles.first}  type='text' placeholder='first name' name='fname' required></input>
-                    <input className={styles.last}  type='text' placeholder='last name' name='lname' required></input>
+                    <input className={styles.first}  type='text' placeholder='First name' name='fname' required></input>
+                    <input className={styles.last}  type='text' placeholder='Last name' name='lname' required></input>
                 </div>
                     <label htmlFor='number' className={styles.label1}>Phone number</label>
                     <input className={styles.text} type='tel'  name='number'  placeholder='Phone number'></input>
                     <label htmlFor='email' className={styles.label1}>Email</label>
                     <input className={styles.text} type='email'  placeholder='Email'  name='email' required></input>
                     <label htmlFor='subject' className={styles.label1}>Subject</label>
-                    <input className={styles.text} type='text'  placeholder='subject'  name='subject'></input>
+                    <input className={styles.text} type='text'  placeholder='Subject'  name='subject'></input>
                     <label htmlFor='message' className={styles.label1}>Your message</label>
                     <textarea className={styles.area} placeholder='Type your message here' name="message" required></textarea>
                     <input className={styles.btn} type='submit' value='Send'  />
