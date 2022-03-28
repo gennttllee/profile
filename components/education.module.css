@@ -40,23 +40,28 @@ box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.103);
 .brac1{
     text-align: left;
     margin: 0 auto 1rem;
+    font-weight: 300;
 }
 
 .brac2{
     text-align: left;
+    font-weight: 300;
 }
 
 .brac3{
     text-align: left;
     margin: 0 auto 1rem;
+    font-weight: 300;
 }
 
 .brac4{
     text-align: left;
+    font-weight: 300;
 }
 
 .heady{
     color: red;
+    font-weight: 500;
 }
 
 @media only screen and (min-width:700px) {

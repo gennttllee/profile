@@ -63,9 +63,14 @@
     transform: scale(2);
 }
 
+.h1{
+    font-weight: 500;
+}
+
 .p1 {
     margin: 1rem 0;
     line-height: 3;
+    font-weight: 300;
 }
 
 @media screen and (min-width: 1000px) {

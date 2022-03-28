@@ -44,12 +44,14 @@
 .h1 {
     margin: 1rem 0 0.3rem;
     color: red;
+    font-weight: 500;
 }
 
 .para2 {
     margin: 0 0 1rem;
     line-height: 1.5;
     text-align: left;
+    font-weight: 300;
 }
 
 .para1 {
@@ -57,12 +59,14 @@
     letter-spacing: 2px;
     text-align: left;
     padding: 0 1rem;
+    font-weight: 300;
 }
 
 .para3 {
     line-height: 1.5;
     text-align: left;
     margin: 0 0 1rem;
+    font-weight: 300;
 }
 
 .tester {

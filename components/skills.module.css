@@ -38,6 +38,7 @@
 .html {
     margin: 1rem auto;
     font-size: .7rem;
+    font-weight: 300;
 }
 
 .p1 {
@@ -46,6 +47,7 @@
 
 .h1 {
     padding: 10px 0;
+    font-weight: 500;
 }
 
 @keyframes move-right {

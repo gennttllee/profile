@@ -1,7 +1,11 @@
 import Image from 'next/image'
 import styles from './navbar.module.css'
+import {useState} from 'react'
+
 
 const Navbar = () => {
+    const [scrol, setScrol] = useState(false)
+
     const menu = () => {
         let x = document.getElementById('container')
         if (x.className === styles.container) {
@@ -13,11 +17,11 @@ const Navbar = () => {
         let y = document.getElementById('container')
         if (y.className === styles.responsive) {
             setTimeout(() => {
-                if (y.className===styles.slide_back){
+                if (y.className === styles.slide_back) {
                     y.className = styles.container
                 }
             }, 500);
-            y.className =styles.slide_back
+            y.className = styles.slide_back
         } else { y.className = styles.responsive }
     }
 

@@ -28,8 +28,8 @@ const Forms = () => {
                 <h2 className={styles.h1}>Mark Williams</h2>
                 <p className={styles.p}>Chief Operating Officer</p>
                 <p className={styles.p1}>I am available for freelance work via any of the options provided</p>
-                <p>Phone: +2348020761320</p>
-                <p>Email: Udooto72@gmail.com</p>
+                <p className={styles.p2}>Phone: +2348020761320</p>
+                <p className={styles.p2}>Email: Udooto72@gmail.com</p>
                 <p className={styles.alt}> Alternatively :</p>
                 <Contacts />
             </div>
@@ -48,7 +48,7 @@ const Forms = () => {
                     <input className={styles.text} type='text'  placeholder='subject'  name='subject'></input>
                     <label htmlFor='message' className={styles.label1}>Your message</label>
                     <textarea className={styles.area} placeholder='Type your message here' name="message" required></textarea>
-                    <input className={styles.btn} type='submit' value='send'  />
+                    <input className={styles.btn} type='submit' value='Send'  />
                 </form>
             </div>
         </div>

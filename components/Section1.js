@@ -1,7 +1,8 @@
 import styles from './section1.module.css'
-
+import Navbar from './Navbar';
 
 const Section1 = () => {
+
     return <div className={styles.container} id='home'>
         <h1 className={styles.h1}>
             <div className={styles.empt}></div>
@@ -17,7 +18,7 @@ const Section1 = () => {
             </div>
         </div>
         <button className={styles.btn}>
-        <a className={styles.tag} href='#forms'> Contact Me</a>
+            <a className={styles.tag} href='#forms'> Contact Me</a>
         </button>
     </div>
 }
