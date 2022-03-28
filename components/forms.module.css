@@ -38,8 +38,9 @@
 .p{
     margin: 0 0 1rem 0;
     font-size: 1.2rem;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: red;
+    font-weight: bold;
 }
 
 
@@ -105,7 +106,7 @@
     font-size: 1.2rem;
     width: 45%;
     height: 3rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
     border: none;
     box-shadow: 5px 5px 9px .1px rgba(128, 128, 128, 0.233);
 }
@@ -123,7 +124,7 @@
     float: right;
     width: 45%;
     height: 3rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
     border: none;
     box-shadow: 5px 5px 9px .1px rgba(128, 128, 128, 0.233);
 }

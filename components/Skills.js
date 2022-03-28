@@ -40,11 +40,11 @@ const Skills = () => {
             <div className={styles.div2}>
                 <div className={styles.jnr2}></div>
             </div>
-            <p className={styles.html} >Puntuality <span className={styles.span3} >75%</span></p>
+            <p className={styles.html} >Punctuality <span className={styles.span3} >75%</span></p>
             <div className={styles.div3}>
                 <div className={styles.jnr3}></div>
             </div>
-            <p className={styles.html} >Hardwork <span className={styles.span4} >85%</span></p>
+            <p className={styles.html} >Hard-work <span className={styles.span4} >85%</span></p>
             <div className={styles.div4}>
                 <div className={styles.jnr4}></div>
             </div>

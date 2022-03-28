@@ -17,7 +17,7 @@ const Experience = () => {
         </div>
         <div className={styles.cover1}>
             <div className={styles.second_div}>
-                <p className={styles.para1}> most of my projects and upcoming peojects will be listed here , please watch out for this space as in the coming future it will be packed with projects upon projects</p>
+                <p className={styles.para1}> most of my projects and upcoming projects will be listed here , please watch out for this space as in the coming future it will be packed with projects upon projects</p>
             </div>
         </div>
     </div>

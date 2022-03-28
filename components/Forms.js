@@ -10,7 +10,7 @@ const Forms = () => {
         emailjs.sendForm('markwilliamz1995@gmail.c', 'template_a2ul24s', e.target, 'jyIO1gciS2IyWyp9M')
             .then((result) => {
                 console.log(result.text);
-                alert('sucessfull')
+                alert('successful')
             }, (error) => {
                 console.log(error.text);
                 alert('error not sent')

@@ -14,7 +14,7 @@ const Education = () => {
                 <h2 className={styles.heady} >Competent School</h2>
                 <p>2006 - 2013 </p>
                 <p>W.A.S.S.C.E </p>
-                <p>NECO</p>
+                <p>N.E.C.O</p>
             </div>
         </div>
     </div>
