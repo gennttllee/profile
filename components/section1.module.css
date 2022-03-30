@@ -88,39 +88,19 @@
     text-align: center;
     width: 12rem;
     height: 3.3rem;
-    color: red;
+    color:white;
+    background-color: red;
     font-size: 1.3rem;
     outline: none;
     border: none;
-    border-radius: 7px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px 1px  rgba(27, 15, 15, 0.521);
 }
-
-.tag{
-    color: red;
-}
-
-.tag:hover{
-    color: white;
-}
-
 
 .btn:hover {
-    color: white;
-    background-color: red;
-    animation: btnhov;
-    animation-duration: 1s;
-    animation-delay: 0.1s;
-    position: relative;
-}
-
-@keyframes btnhov {
-    0% {
-        top: -1rem;
-    }
-
-    100% {
-        top: 0rem;
-    }
+    background-color: rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+    box-shadow: none;
 }
 
 @media screen and (min-width:800px) {

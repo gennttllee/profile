@@ -1,13 +1,13 @@
 .container {
     color: red;
-    margin:0;
+    margin: 0;
     text-align: centre;
     height: fit-content;
     padding: 10px;
     z-index: 1;
     position: fixed;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.479);
+    box-shadow: 0 2px 20px 2px rgba(0, 0, 0, 0.253);
 }
 
 .img {
@@ -57,7 +57,7 @@
     animation: slide-right;
     animation-duration: 0.6s;
     font-weight: 300;
-    box-shadow: 5px 0 2px 2000px rgba(0, 0, 0, 0.404);
+    box-shadow: 5px 0 2px 250px rgba(0, 0, 0, 0.404);
 }
 
 @keyframes slide-right {
@@ -107,6 +107,11 @@
     font-size: 1.5rem;
 }
 
+.responsive .list_items:hover{
+    color: red;
+    text-decoration: underline;
+}
+
 .responsive .img {
     margin-top: 2rem;
 }
@@ -116,13 +121,15 @@
 }
 
 .slide_back {
-    background-color: rgba(255, 255, 255, 0.87);
+    background-color: white;
     position: fixed;
     z-index: 1;
     width: 50%;
     height: 100%;
     animation: slide-left;
     animation-duration: 1s;
+    font-weight: 300;
+    box-shadow: 5px 0 2px 250px rgba(0, 0, 0, 0.404);
 }
 
 @keyframes slide-left {
@@ -186,20 +193,23 @@
         float: right;
         text-align: center;
         list-style: none;
+        background-color: rgba(0, 0, 0, 0.445);
+        border-radius: 20px;
     }
 
     .list_items {
         margin: 0.5rem 2rem;
-        color:white;
         font-size: 1.3rem;
         font-weight: 300;
+        color:white;
     }
 
     .list_items:hover {
         color: orange;
+        text-decoration: underline;
     }
 
-    .container {
-        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.151);
+    .container{
+        box-shadow: none;
     }
 }
