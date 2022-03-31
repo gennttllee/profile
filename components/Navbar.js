@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from './navbar.module.css'
+import Contacts from  './Contacts'
 
 
 const Navbar = () => {
@@ -49,6 +50,10 @@ const Navbar = () => {
         <button id='collapse' onClick={collapse} className={styles.btn_close}>
             <span className="material-icons">close</span>
         </button>
+        <div className={styles.socials}>
+            <p className={styles.texter}> Connect With Me: </p>
+            <Contacts />
+        </div>
     </div>
 }
 
