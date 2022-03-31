@@ -26,6 +26,9 @@ const Navbar = () => {
         <div className={styles.img}>
             <Image src='/static/img-1.jpg' alt='myimage' width={50} height={50}></Image>
         </div>
+        <div className={styles.image2}>
+            <Image src='/static/logo.jpg' alt='myimage' width={225} height={250}></Image>
+        </div>
         <ul id='list' className={styles.list}>
             <li className={styles.list_items}>
                 <a href='#home'>Home</a>

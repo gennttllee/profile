@@ -18,7 +18,7 @@ const Resume = () => {
         setBox(<Experience />)
     }
 
-    return <div id='resume'>
+    return <div className={styles.container} id='resume'>
         <p className={styles.p1} >EXPERIENCE</p>
         <h1 className={styles.h1} >My Resume</h1>
         <div className={styles.diver}>

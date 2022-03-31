@@ -1,23 +1,21 @@
-.container{
+.container {
     padding: 1.5rem;
     height: fit-content;
 }
 
-.first_div{
+.first_div {
     animation: move-up;
     position: relative;
     animation-duration: 1s;
     padding: 2rem;
     margin-bottom: 2rem;
     background-image: linear-gradient(to bottom right,
-    rgba(188, 188, 189, 0.212),
-    rgba(212, 212, 212, 0.507),
-    rgb(255, 255, 255));
-border-radius: 1rem;
-box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.103);
+            rgba(188, 188, 189, 0.212),
+            rgba(212, 212, 212, 0.507),
+            rgb(255, 255, 255));
 }
 
-.second_div{
+.second_div {
     animation: move-up;
     position: relative;
     animation-duration: 1s;
@@ -25,91 +23,114 @@ box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.103);
     padding: 2rem;
     margin-top: 2rem;
     background-image: linear-gradient(to bottom right,
-    rgba(188, 188, 189, 0.212),
-    rgba(212, 212, 212, 0.507),
-    rgb(255, 255, 255));
-border-radius: 1rem;
-box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.103);
+            rgba(188, 188, 189, 0.212),
+            rgba(212, 212, 212, 0.507),
+            rgb(255, 255, 255));
 }
 
-@keyframes move-up{
-    from{bottom:-100rem}
-    to {bottom:0rem}
+.over {
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.103);
 }
 
-.brac1{
+.over1 {
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.103);
+}
+
+@keyframes move-up {
+    from {
+        bottom: -100rem
+    }
+
+    to {
+        bottom: 0rem
+    }
+}
+
+.brac1 {
     text-align: left;
     margin: 0 auto 1rem;
     font-weight: 300;
 }
 
-.brac2{
+.brac2 {
     text-align: left;
     font-weight: 300;
 }
 
-.brac3{
+.brac3 {
     text-align: left;
     margin: 0 auto 1rem;
     font-weight: 300;
 }
 
-.brac4{
+.brac4 {
     text-align: left;
     font-weight: 300;
 }
 
-.heady{
+.heady {
     color: red;
     font-weight: 500;
 }
 
 @media only screen and (min-width:700px) {
-    .first_div{ 
+    .first_div {
         animation: move-left;
         animation-duration: 1s;
-        margin:  0;
-        height: 90%;
+        margin: 0;
+        height: fit-content;
     }
 
-    .over{
+    .over {
         display: inline-block;
-        height: 25rem;
+        height: fit-content;
         width: 45%;
-        margin: 0 1rem ;
+        margin: 0 1rem;
         overflow: hidden;
     }
 
-    .over1{
+    .over1 {
         width: 40%;
         display: inline-block;
         margin: 0 1rem;
-        height: 25rem;
+        height: fit-content;
         overflow: hidden;
     }
 
-    @keyframes move-right{
-        from{left:-100rem}
-        to{left:0}
+    @keyframes move-right {
+        from {
+            left: -100rem
+        }
+
+        to {
+            left: 0
+        }
     }
 
-    @keyframes move-left{
-        from{right:-100rem}
-        to{right:0}
+    @keyframes move-left {
+        from {
+            right: -100rem
+        }
+
+        to {
+            right: 0
+        }
     }
 
-    .second_div{
+    .second_div {
         animation: move-right;
         animation-duration: 1s;
         margin: 0;
-        height: 90%;
+        height: fit-content;
     }
 
-    .brac3{
+    .brac3 {
         margin: 2rem auto 2rem;
     }
 
-    .brac1{
+    .brac1 {
         margin: 2rem auto 2rem;
     }
 }
