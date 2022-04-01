@@ -83,8 +83,8 @@
 .responsive .btn_close {
     display: block;
     position: absolute;
-    color:white;
-    background-color: red;
+    color:red;
+    background-color:rgba(128, 128, 128, 0.123);
     border-radius: 100%;
     border: none;
     width: 3rem;
