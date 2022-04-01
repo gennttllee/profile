@@ -1,9 +1,61 @@
 .divider{
-    margin: 1rem 1.5rem 1rem 0 ;
-    border: none;
-    font-size: 2rem;
-    color:rgba(4, 49, 12, 0.541);
-    background-color:transparent;
+    margin: 1rem 5px;
+    border-radius: 100%;
+    font-size: 1.2rem;
+    color:white;
+    background-color:#4267B2;
     text-align: left;
-    padding: 0;
+    padding: 8px 12px;
+    border-color: transparent;
+}
+
+.divider:hover{
+    background-color: black;
+}
+
+.divider1{
+    margin: 1rem 5px;
+    border-radius: 100%;
+    font-size: 1.2rem;
+    color:white;
+    background-color:#cd486b;
+    text-align: left;
+    padding: 8px;
+    border-color: transparent;
+}
+
+.divider1:hover{
+    background-color: black;
+}
+
+
+.divider2{
+    margin: 1rem 5px;
+    border-radius: 100%;
+    font-size: 1.2rem;
+    color:white;
+    background-color:#0e76a8;
+    text-align: left;
+    padding: 8px;
+    border-color: transparent;
+}
+
+.divider2:hover{
+    background-color: black;
+}
+
+
+.divider3{
+    margin: 1rem 5px;
+    border-radius: 100%;
+    font-size: 1.2rem;
+    color:white;
+    background-color:	#25D366;
+    text-align: left;
+    padding: 8px;
+    border-color: transparent;
+}
+
+.divider3:hover{
+    background-color: black;
 }
