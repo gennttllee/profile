@@ -82,14 +82,15 @@
 
 .responsive .btn_close {
     display: block;
+    position: absolute;
     color:white;
     background-color: red;
     border-radius: 100%;
     border: none;
     width: 3rem;
     height: 3rem;
-    float: right;
-    margin-top: -22.3rem;
+    top: -3rem;
+    right: 0;
     margin-right: 2rem;
 }
 
@@ -124,18 +125,17 @@
 .responsive .socials{
     display: block;
     text-align: left;
-    margin: 5rem 0  0 2rem;
+    margin: 5rem 0  0 2.5rem;
 }
 
 .responsive .texter{
     font-size: 1.4rem;
     font-weight: 300;
-    padding-left: 9px;
 }
 
 .responsive .img {
     margin-top: 2rem;
-    float: left;
+    margin-left: 2.4rem;
 }
 
 .slide_back .list {
