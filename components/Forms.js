@@ -23,7 +23,7 @@ const Forms = () => {
         <div className={styles.cover}>
             <div className={styles.container}>
                 <div className={styles.img}>
-                    <Image src='/static/form.jpg' alt='myimage' priority='true' width={390} height={330}></Image>
+                    <Image src='/static/form.jpg' alt='myimage' priority='true' width={450} height={450}></Image>
                 </div>
                 <h2 className={styles.h1}>Mark Williams</h2>
                 <p className={styles.p}>Chief Operating Officer</p>
