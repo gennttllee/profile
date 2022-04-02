@@ -2,7 +2,7 @@
     background: rgba(0, 0, 0, 0.548) url("../public/static/logos.jpeg");
     background-size:cover;
     background-blend-mode: darken;
-    height: 80vh;
+    height:35rem;
 }
 
 .empt {
