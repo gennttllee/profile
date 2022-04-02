@@ -10,6 +10,9 @@
     background-color: white;
     animation: enter;
     animation-duration: 1s;
+    border-style: solid;
+    border-width: 0 0 1px;
+    border-color: rgba(128, 128, 128, 0.269);
 }
 
 .believe {

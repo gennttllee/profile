@@ -45,7 +45,9 @@ const Navbar = () => {
             y.className = styles.container
         } else if (y.className == styles.responsive) {
             setTimeout(() => {
-                if (y.className === styles.slide_back) {
+                if (y.className === styles.slide_back && show ) {
+                    y.className = styles.believe
+                } else  if (y.className === styles.slide_back && show===false ) {
                     y.className = styles.container
                 }
             }, 500);
