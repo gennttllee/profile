@@ -20,7 +20,7 @@ const Navbar = () => {
 
     const menu = () => {
         let x = document.getElementById('container')
-        if (x.className === styles.container) {
+        if (x.className === styles.container || x.className === styles.believe) {
             x.className = styles.responsive
         } else { x.className = styles.container }
     }
@@ -29,7 +29,9 @@ const Navbar = () => {
         let y = document.getElementById('container')
         if (y.className === styles.responsive) {
             setTimeout(() => {
-                if (y.className === styles.slide_back) {
+                if (y.className === styles.slide_back && show) {
+                    y.className = styles.believe
+                } else if (y.className === styles.slide_back && show===false){
                     y.className = styles.container
                 }
             }, 500);
