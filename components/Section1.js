@@ -1,9 +1,9 @@
-import styles from './section1.module.css'
-import Navbar from './Navbar';
+import styles from './section1.module.css';
+
 
 const Section1 = () => {
 
-    return <div className={styles.container} id='home'>
+    return <div className={styles.container}  id='home'>
         <h1 className={styles.h1}>
             <div className={styles.empt}></div>
             <span className={styles.span1}>MARK</span>

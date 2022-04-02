@@ -2,7 +2,8 @@ import Card from './card'
 import styles from './section2.module.css'
 
 const Section2 =()=>{
-    return <div className={styles.container} id='features'>
+
+    return <div className={styles.container}  id='features'>
         <p className={styles.para1}>FEATURES</p>
         <h1 className={styles.h1}>What I Do</h1>
         <Card

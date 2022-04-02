@@ -1,9 +1,23 @@
 import Image from 'next/image'
 import styles from './navbar.module.css'
 import Contacts from './Contacts'
-
+import { useState, useEffect } from 'react';
 
 const Navbar = () => {
+    const [show, setShow] = useState(true)
+    const controlNavbar = () => {
+        if (window.scrollY > 500) {
+            setShow(false)
+        } else { setShow(true) }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', controlNavbar)
+        return () => {
+            window.removeEventListener('scroll', controlNavbar)
+        }
+    },[]);
+
     const menu = () => {
         let x = document.getElementById('container')
         if (x.className === styles.container) {
@@ -23,11 +37,11 @@ const Navbar = () => {
         } else { y.className = styles.responsive }
     }
 
-    const collapsed =()=>{
+    const collapsed = () => {
         let y = document.getElementById('container')
         if (y.className == styles.container) {
             y.className = styles.container
-        } else if (y.className==styles.responsive){
+        } else if (y.className == styles.responsive) {
             setTimeout(() => {
                 if (y.className === styles.slide_back) {
                     y.className = styles.container
@@ -37,12 +51,12 @@ const Navbar = () => {
         }
     }
 
-    return <div id='container' className={styles.container}>
+    return <div id='container' className={ show ? styles.believe :styles.container}>
         <div className={styles.img}>
             <Image src='/static/img-1.jpg' alt='myimage' width={50} height={50}></Image>
         </div>
         <div className={styles.image2}>
-            <Image src='/static/logo.jpg' alt='myimage' width={225} height={250}></Image>
+            <Image src='/static/crop.jpeg' alt='myimage' width={250} height={250}></Image>
         </div>
         <ul id='list' className={styles.list}>
             <li onClick={collapsed} className={styles.list_items}>
