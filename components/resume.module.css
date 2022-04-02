@@ -1,61 +1,62 @@
-.load_div{
+.load_div {
     width: 100%;
     height: fit-content;
     margin: 3rem 0;
 }
 
-.p1{
+.p1 {
     margin: 5rem auto 0;
     color: red;
 }
 
-.h1{
+.h1 {
     margin: 0 auto 3rem;
     font-size: 4rem;
     font-weight: 600;
 }
 
-.btn:focus{
+.btn:focus {
     color: red;
 }
 
-.btn{
+.btn {
     display: block;
     margin: 0 auto;
     width: 100%;
     border: none;
-    background-image: linear-gradient(to bottom left, white, rgba(241, 239, 239, 0.034),white);
+    background-image: linear-gradient(to bottom left, white,
+    rgba(235, 235, 235, 0.034));
     height: 4rem;
     font-size: 1.2rem;
     box-shadow: 2px 2px 10px 1px rgba(177, 176, 176, 0.311);
 }
 
-.diver{
+.diver {
     margin: 2rem auto;
     padding: 0 1rem;
 }
 
-.btn:active{
+.btn:active {
     box-shadow: none;
 }
 
-.btn:hover{
+.btn:hover {
     color: red;
     z-index: 1;
     z-index: 1;
     position: relative;
 }
 
-@media screen and (min-width:600px){
-    .btn{
+@media screen and (min-width:600px) {
+    .btn {
         display: inline-block;
         width: 20%;
         margin: 0 10px;
     }
 }
 
-@media screen and (min-width:800px) and ( max-width:900px){
-    .btn{
+@media screen and (min-width:800px) and (max-width:900px) {
+    .btn {
         display: inline-block;
         width: 22%;
         margin: 0 10px;
@@ -63,7 +64,7 @@
 }
 
 @media screen and (min-width:1100px) {
-    .container{
+    .container {
         width: 80%;
         position: relative;
         float: right;
