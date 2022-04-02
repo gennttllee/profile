@@ -7,7 +7,7 @@
     z-index: 1;
     position: fixed;
     width: 100%;
-    background-color: #F0F8FE;
+    background-color: white;
     border-bottom-right-radius: 3rem;
     border-bottom-left-radius: 3rem;
     animation: enter;
@@ -19,7 +19,7 @@
 
 @keyframes enter{
     0% { background-color: rgba(0, 0, 0, 0); top:-100%;}
-    100% { background-color: #F0F8FE; top:0;}
+    100% { background-color: white; top:0;}
 }
 
 .socials{
@@ -71,7 +71,7 @@
 
 
 .responsive {
-    background-color: #F0F8FE;
+    background-color: white;
     position: fixed;
     z-index: 1;
     width:75%;
@@ -155,7 +155,7 @@
 }
 
 .slide_back {
-    background-color: #F0F8FE;
+    background-color: white;
     position: fixed;
     z-index: 1;
     width: 50%;
@@ -233,7 +233,7 @@
 
     .container{
         float: left;
-        background-color: #F0F8FE;
+        background-color: white;
         position: fixed;
         width: 18%;
         height: 100%;

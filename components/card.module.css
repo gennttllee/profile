@@ -9,9 +9,9 @@
     margin: 2rem 1rem;
     overflow: hidden;
     background-image: linear-gradient(to bottom right,
-    #F0F8FE,
-    #7886911c,
-    #F0F8FE);
+    white,
+    rgba(212, 212, 212, 0.242),
+    white);
     border-radius: 1rem;
     box-shadow: .3rem .2rem 1rem rgba(0, 0, 0, 0.103);
 }
