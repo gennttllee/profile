@@ -9,11 +9,11 @@
     margin: 2rem 1rem;
     overflow: hidden;
     background-image: linear-gradient(to bottom right,
-    rgba(188, 188, 189, 0.212),
-    rgba(212, 212, 212, 0.507),
-    rgb(255, 255, 255));
+    #F0F8FE,
+    #7886911c,
+    #F0F8FE);
     border-radius: 1rem;
-    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.103);
+    box-shadow: .3rem .2rem 1rem rgba(0, 0, 0, 0.103);
 }
 
 .main_div {

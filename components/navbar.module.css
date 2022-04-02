@@ -7,7 +7,19 @@
     z-index: 1;
     position: fixed;
     width: 100%;
-    box-shadow: 0 2px 20px 2px rgba(0, 0, 0, 0.253);
+    background-color: #F0F8FE;
+    border-bottom-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    animation: enter;
+    animation-duration: 1s;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: orange;
+}
+
+@keyframes enter{
+    0% { background-color: rgba(0, 0, 0, 0); top:-100%;}
+    100% { background-color: #F0F8FE; top:0;}
 }
 
 .socials{
@@ -59,7 +71,7 @@
 
 
 .responsive {
-    background-color: white;
+    background-color: #F0F8FE;
     position: fixed;
     z-index: 1;
     width:75%;
@@ -67,7 +79,7 @@
     animation: slide-right;
     animation-duration: 0.6s;
     font-weight: 300;
-    box-shadow: 5px 0 2px 150px rgba(0, 0, 0, 0.397);
+    box-shadow: 5px 0 2px 2000000px rgba(0, 0, 0, 0.397);
 }
 
 @keyframes slide-right {
@@ -143,15 +155,14 @@
 }
 
 .slide_back {
-    background-color: white;
+    background-color: #F0F8FE;
     position: fixed;
     z-index: 1;
     width: 50%;
     height: 100%;
     animation: slide-left;
-    animation-duration: 1s;
+    animation-duration: 2s;
     font-weight: 300;
-    box-shadow: 5px 0 2px 150px rgba(0, 0, 0, 0.397);
 }
 
 @keyframes slide-left {
@@ -222,7 +233,7 @@
 
     .container{
         float: left;
-        background-color: white;
+        background-color: #F0F8FE;
         position: fixed;
         width: 18%;
         height: 100%;
@@ -230,6 +241,7 @@
         animation-duration: 0.6s;
         font-weight: 300;
         text-align: center;
+        box-shadow: 2px 2px 20px 2px rgba(128, 128, 128, 0.215);
     }
 
     .list {
@@ -252,6 +264,10 @@
     .list_items:hover{
         color: red;
         text-decoration: underline;
+    }
+
+    .list_items:focus{
+        color: red;
     }
 
     .img {
