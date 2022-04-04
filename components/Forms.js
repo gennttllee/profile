@@ -2,20 +2,27 @@ import styles from './forms.module.css'
 import Image from 'next/image'
 import Contacts from './Contacts'
 import emailjs from 'emailjs-com';
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 
 
 const Forms = () => {
-    const myRefs = useRef();
-    const [shows, setShow] = useState(true)
-    console.log(shows);
+    const [shows, setShow] = useState(false)
+    const controlNavbar = () => {
+        if (window.scrollY > 2000 && window.innerWidth > 600) {
+            setShow(true)
+        } else if (window.scrollY < 3500 && window.innerWidth < 600){
+            setShow(false)
+        } else if(window.scrollY > 3500 && window.innerWidth < 600){
+            setShow(true)
+        } else { setShow(false) }
+    }
+
     useEffect(() => {
-        const observer = new IntersectionObserver((entries)=>{
-            const entry = entries[0];
-            setShow(entry.isIntersecting)
-        })
-        observer.observe(myRefs.current);
-    }, []);
+        window.addEventListener('scroll', controlNavbar)
+        return () => {
+            window.removeEventListener('scroll', controlNavbar)
+        }
+    },[]);
 
     const submitted = (e) => {
         e.preventDefault();
@@ -29,7 +36,7 @@ const Forms = () => {
             });
             e.target.reset();
     }
-    return <div ref={myRefs} className={styles.main_div} id="forms">
+    return <div className={styles.main_div} id="forms">
         <p className={styles.contact}>CONTACT</p>
         <h2 className={styles.me}>Contact Me</h2>
         <div className={styles.cover}>

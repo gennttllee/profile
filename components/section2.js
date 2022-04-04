@@ -1,18 +1,23 @@
 import Card from './card'
 import styles from './section2.module.css'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 
 const Section2 = () => {
-    const myReference = useRef();
-    const [show5, setShows] = useState(true)
+    const [show5, setShow5] = useState(false)
+    const controlNavbar = () => {
+        if (window.scrollY > 500) {
+            setShow5(true)
+        } else { setShow5(false) }
+    }
+
     useEffect(() => {
-        const observer = new IntersectionObserver((entries)=>{
-            const entry5 = entries[0];
-            setShows(entry5.isIntersecting)
-        })
-        observer.observe(myReference.current);
-    }, []);
-    return <div ref={myReference} className={styles.container} id='features'>
+        window.addEventListener('scroll', controlNavbar)
+        return () => {
+            window.removeEventListener('scroll', controlNavbar)
+        }
+    },[]);
+
+    return <div  className={styles.container} id='features'>
         <p className={styles.para1}>FEATURES</p>
         <h1 className={styles.h1}>What I Do</h1>
         <div className={show5 ? styles.first_card : styles.nemesis} >

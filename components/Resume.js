@@ -2,18 +2,24 @@ import styles from './resume.module.css'
 import Skills from './Skills'
 import Education from './Education'
 import Experience from './Experience'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 
 const Resume = () => {
-    const [show1, setShow] = useState(true)
-    const myRef = useRef();
+    const [show1, setShow1] = useState(false)
+    const controlNavbar = () => {
+        if (window.scrollY > 2000 && window.innerWidth < 600) {
+            setShow1(true)
+        }else if (window.scrollY > 1000 && window.innerWidth > 600){
+            setShow1(true)
+        } else { setShow1(false) }
+    }
+
     useEffect(() => {
-        const observer = new IntersectionObserver((entries)=>{
-            const entry = entries[0];
-            setShow(entry.isIntersecting)
-        })
-        observer.observe(myRef.current);
-    }, []);
+        window.addEventListener('scroll', controlNavbar)
+        return () => {
+            window.removeEventListener('scroll', controlNavbar)
+        }
+    },[]);
 
     const [meme, setBox] = useState(<Skills />)
     const btn1 = () => {
@@ -28,7 +34,7 @@ const Resume = () => {
         setBox(<Experience />)
     }
 
-    return <div ref={myRef} className={ styles.container} id='resume'>
+    return <div  className={ styles.container} id='resume'>
         <p  className={styles.p1} >EXPERIENCE</p>
         <h1 className={styles.h1} >My Resume</h1>
         <div className={show1 ? styles.diver : styles.nemesis}>

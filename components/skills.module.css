@@ -28,7 +28,7 @@
     animation: move-up;
     animation-duration: 1s;
     overflow: hidden;
-    animation-delay: .6s;
+    animation-delay: 1s;
 }
 
 @keyframes move-up{
