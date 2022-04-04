@@ -1,4 +1,5 @@
 .main_div{
+    overflow: hidden;
     margin: 4rem 0;
     border-style: solid;
     border-width: 2px 0 0;
@@ -6,7 +7,7 @@
 }
 
 .nemesis{
-    background-color: black;
+    display: none;
 }
 
 .contact{
@@ -64,6 +65,7 @@
 }
 
 .container{
+    overflow: hidden;
     margin: 0 0 2rem;
     padding: 1rem 2rem;
     text-align: left;
@@ -89,6 +91,7 @@
 }
 
 .container1{
+    overflow: hidden;
     padding: 1rem 2rem;
     background-image: linear-gradient(to bottom right,
     white,
@@ -99,7 +102,7 @@
     position: relative;
     animation: moving;
     animation-duration: 1s;
-    animation-delay: 1s;
+    animation-delay: .1s;
 }
 
 .cover{
