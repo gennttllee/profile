@@ -2,6 +2,27 @@
     width: 100%;
     height: fit-content;
     margin: 3rem 0;
+    position: relative;
+    animation: moving;
+    animation-duration: 1s;
+}
+
+.container{
+    overflow: hidden;
+}
+
+.nemesis{
+    display: none;
+}
+
+@keyframes moving {
+    from {
+        bottom: -100rem;
+    }
+
+    to {
+        bottom: 0;
+    }
 }
 
 .p1 {
@@ -34,6 +55,9 @@
 .diver {
     margin: 2rem auto;
     padding: 0 1rem;
+    position: relative;
+    animation: moving;
+    animation-duration: 1s;
 }
 
 .btn:active {
@@ -68,5 +92,6 @@
         width: 80%;
         position: relative;
         float: right;
+        overflow: hidden;
     }
 }

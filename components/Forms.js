@@ -2,9 +2,21 @@ import styles from './forms.module.css'
 import Image from 'next/image'
 import Contacts from './Contacts'
 import emailjs from 'emailjs-com';
+import { useState, useEffect, useRef } from 'react'
 
 
 const Forms = () => {
+    const myRefs = useRef();
+    const [shows, setShow] = useState(true)
+    console.log(shows);
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries)=>{
+            const entry = entries[0];
+            setShow(entry.isIntersecting)
+        })
+        observer.observe(myRefs.current);
+    }, []);
+
     const submitted = (e) => {
         e.preventDefault();
         emailjs.sendForm('markwilliamz1995@gmail.c', 'template_a2ul24s', e.target, 'jyIO1gciS2IyWyp9M')
@@ -17,11 +29,11 @@ const Forms = () => {
             });
             e.target.reset();
     }
-    return <div className={styles.main_div} id="forms">
+    return <div ref={myRefs} className={styles.main_div} id="forms">
         <p className={styles.contact}>CONTACT</p>
         <h2 className={styles.me}>Contact Me</h2>
         <div className={styles.cover}>
-            <div className={styles.container}>
+            <div className={shows ? styles.container : styles.nemesis}>
                 <div className={styles.img}>
                     <Image src='/static/form.jpg' alt='myimage' priority='true' width={450} height={450}></Image>
                 </div>
@@ -33,7 +45,7 @@ const Forms = () => {
                 <p className={styles.alt}> Alternatively :</p>
                 <Contacts />
             </div>
-            <div className={styles.container1}>
+            <div className={shows ? styles.container1 : styles.nemesis}>
                 <form onSubmit={submitted} >
                 <div className={styles.late}>
                 <label htmlFor='name' className={styles.label} >Full name</label>

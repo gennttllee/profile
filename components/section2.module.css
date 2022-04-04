@@ -6,6 +6,7 @@
 }
 
 .container{
+    overflow: hidden;
     text-align: centre;
     margin: 5rem auto ;
     padding-bottom: 6rem;
@@ -19,6 +20,168 @@
     margin: 0.5rem auto 1rem;
     font-size: 4rem;
     font-weight: 600;
+}
+
+.nemesis{
+    display: none;
+}
+
+.first_card{
+    position: relative;
+    animation: moving;
+    animation-duration: 1s;
+    margin: 2rem 1rem;
+    height: 50vh;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right,
+    white,
+    rgba(212, 212, 212, 0.242),
+    white);
+    border-radius: 1rem;
+    box-shadow: .3rem .2rem 1rem rgba(0, 0, 0, 0.103);
+}
+
+.third_card{
+    position: relative;
+    animation: moving;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    margin: 2rem 1rem;
+    height: 50vh;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right,
+    white,
+    rgba(212, 212, 212, 0.242),
+    white);
+    border-radius: 1rem;
+    box-shadow: .3rem .2rem 1rem rgba(0, 0, 0, 0.103);
+}
+
+.fourth_card{
+    position: relative;
+    animation: moving;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    margin: 2rem 1rem;
+    height: 50vh;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right,
+    white,
+    rgba(212, 212, 212, 0.242),
+    white);
+    border-radius: 1rem;
+    box-shadow: .3rem .2rem 1rem rgba(0, 0, 0, 0.103);
+}
+
+
+@keyframes moving {
+    from {
+        bottom: -100rem;
+    }
+
+    to {
+        bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .first_card {
+        width: 25%;
+        height: 25rem;
+        display: inline-block;
+        margin: 2rem 1rem;
+    }
+
+    .third_card {
+        width: 25%;
+        height: 25rem;
+        display: inline-block;
+        margin: 2rem 1rem;
+        position: relative;
+        animation: moving;
+        animation-duration: 1s;
+        animation-delay: .1s;
+    }
+
+    .fourth_card {
+        width: 25%;
+        height: 25rem;
+        display: inline-block;
+        margin: 2rem 1rem;
+        position: relative;
+        animation: moving;
+        animation-duration: 1s;
+        animation-delay: .2s;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+    .first_card {
+        width: 35%;
+        height: 25rem;
+        display: inline-block;
+        margin: 2rem 2rem;
+    }
+
+    .third_card {
+        width: 35%;
+        height: 25rem;
+        display: inline-block;
+        margin: 2rem 2rem;
+    }
+
+    .fourth_card {
+        width: 35%;
+        height: 25rem;
+        display: inline-block;
+        margin: 2rem 2rem;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    .first_card {
+        width: 40%;
+        height: 25rem;
+        display: inline-block;
+        margin: 2rem 1rem;
+    }
+
+    .third_card {
+        width: 40%;
+        height: 25rem;
+        display: inline-block;
+        margin: 2rem 1rem;
+    }
+
+    .fourth_card {
+        width: 40%;
+        height: 25rem;
+        display: inline-block;
+        margin: 2rem 1rem;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width:1300px){
+    .first_card {
+        width: 30%;
+        height: 25rem;
+        display: inline-block;
+        margin: 2rem 1rem;
+    }
+
+    .third_card {
+        width: 30%;
+        height: 25rem;
+        display: inline-block;
+        margin: 2rem 1rem;
+    }
+
+    .fourth_card {
+        width: 30%;
+        height: 25rem;
+        display: inline-block;
+        margin: 2rem 1rem;
+    }
 }
 
 @media screen and (min-width:1100px) {
