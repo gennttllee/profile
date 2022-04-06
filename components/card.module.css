@@ -11,6 +11,7 @@
     animation: move-up;
     animation-duration: 0.7s;
     position: relative;
+    animation-fill-mode: forwards;
 }
 
 @keyframes move-up {

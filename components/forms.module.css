@@ -1,6 +1,7 @@
 .main_div{
     overflow: hidden;
     margin: 4rem 0;
+    padding: 1.2rem 0;
     border-style: solid;
     border-width: 2px 0 0;
     border-color: rgba(128, 128, 128, 0.199);
@@ -102,7 +103,7 @@
     position: relative;
     animation: moving;
     animation-duration: 1s;
-    animation-delay: 1s;
+    animation-delay: 2s;
 }
 
 .cover{

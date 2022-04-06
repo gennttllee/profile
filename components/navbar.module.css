@@ -176,7 +176,7 @@
     background-color: white;
     position: fixed;
     z-index: 1;
-    width: 50%;
+    width: 75%;
     height: 100%;
     animation: slide-left;
     animation-duration: 2s;

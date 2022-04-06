@@ -10,9 +10,9 @@ const Forms = () => {
     const controlNavbar = () => {
         if (window.scrollY > 2000 && window.innerWidth > 600) {
             setShow(true)
-        } else if (window.scrollY < 3500 && window.innerWidth < 600){
+        } else if (window.scrollY < 3500 && window.innerWidth < 600) {
             setShow(false)
-        } else if(window.scrollY > 3500 && window.innerWidth < 600){
+        } else if (window.scrollY > 3700 && window.innerWidth < 600) {
             setShow(true)
         } else { setShow(false) }
     }
@@ -22,7 +22,7 @@ const Forms = () => {
         return () => {
             window.removeEventListener('scroll', controlNavbar)
         }
-    },[]);
+    }, []);
 
     const submitted = (e) => {
         e.preventDefault();
@@ -34,7 +34,7 @@ const Forms = () => {
                 console.log(error.text);
                 alert('error not sent')
             });
-            e.target.reset();
+        e.target.reset();
     }
     return <div className={styles.main_div} id="forms">
         <p className={styles.contact}>CONTACT</p>
@@ -54,20 +54,20 @@ const Forms = () => {
             </div>
             <div className={shows ? styles.container1 : styles.nemesis}>
                 <form onSubmit={submitted} >
-                <div className={styles.late}>
-                <label htmlFor='name' className={styles.label} >Full name</label>
-                    <input className={styles.first}  type='text' placeholder='First name' name='fname' required></input>
-                    <input className={styles.last}  type='text' placeholder='Last name' name='lname' required></input>
-                </div>
+                    <div className={styles.late}>
+                        <label htmlFor='name' className={styles.label} >Full name</label>
+                        <input className={styles.first} type='text' placeholder='First name' name='fname' required></input>
+                        <input className={styles.last} type='text' placeholder='Last name' name='lname' required></input>
+                    </div>
                     <label htmlFor='number' className={styles.label1}>Phone number</label>
-                    <input className={styles.text} type='tel'  name='number'  placeholder='Phone number'></input>
+                    <input className={styles.text} type='tel' name='number' placeholder='Phone number'></input>
                     <label htmlFor='email' className={styles.label1}>Email</label>
-                    <input className={styles.text} type='email'  placeholder='Email'  name='email' required></input>
+                    <input className={styles.text} type='email' placeholder='Email' name='email' required></input>
                     <label htmlFor='subject' className={styles.label1}>Subject</label>
-                    <input className={styles.text} type='text'  placeholder='Subject'  name='subject'></input>
+                    <input className={styles.text} type='text' placeholder='Subject' name='subject'></input>
                     <label htmlFor='message' className={styles.label1}>Your message</label>
                     <textarea className={styles.area} placeholder='Type your message here' name="message" required></textarea>
-                    <input className={styles.btn} type='submit' value='Send'  />
+                    <input className={styles.btn} type='submit' value='Send' />
                 </form>
             </div>
         </div>

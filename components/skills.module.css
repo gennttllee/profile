@@ -170,7 +170,7 @@
     animation: move-right;
     animation-duration: 1s;
     position: relative;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
 }
 
 .span6 {
@@ -179,7 +179,7 @@
     animation: move-right;
     animation-duration: 1s;
     position: relative;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
 }
 
 .jnr7 {
@@ -189,7 +189,7 @@
     animation: move-right;
     animation-duration: 1s;
     position: relative;
-    animation-delay: 1.1s;
+    animation-delay: 1.6s;
 }
 
 .span7 {
@@ -198,7 +198,7 @@
     animation: move-right;
     animation-duration: 1s;
     position: relative;
-    animation-delay: 1.1s;
+    animation-delay: 1.6s;
 }
 
 .jnr8 {
@@ -208,7 +208,7 @@
     animation: move-right;
     animation-duration: 1s;
     position: relative;
-    animation-delay: 1.2s;
+    animation-delay: 1.7s;
 }
 
 .span8 {
@@ -217,7 +217,7 @@
     animation: move-right;
     animation-duration: 1s;
     position: relative;
-    animation-delay: 1.2s;
+    animation-delay: 1.7s;
 }
 
 .jnr9 {
@@ -227,7 +227,7 @@
     animation: move-right;
     animation-duration: 1s;
     position: relative;
-    animation-delay: 1.3s;
+    animation-delay: 1.8s;
 }
 
 .span9 {
@@ -236,7 +236,7 @@
     animation: move-right;
     animation-duration: 1s;
     position: relative;
-    animation-delay: 1.3s;
+    animation-delay: 1.8s;
 }
 
 .jnr10 {
@@ -246,7 +246,7 @@
     animation: move-right;
     animation-duration: 1s;
     position: relative;
-    animation-delay: 1.4s;
+    animation-delay: 1.9s;
 }
 
 .span10 {
@@ -255,7 +255,7 @@
     animation: move-right;
     animation-duration: 1s;
     position: relative;
-    animation-delay: 1.4s;
+    animation-delay: 1.9s;
 }
 
 @media screen and (min-width:800px) {
