@@ -8,7 +8,7 @@ const Education = () => {
                 <h2 className={styles.heady}>N.O.University Of Nigeria</h2>
                 <p>2018 - 2022 </p>
                 <p>Bsc Economics</p>
-                <p> In-view</p>
+                <p> B.Sc</p>
             </div>
             <div className={styles.brac2}>
                 <h2 className={styles.heady} >Competent School</h2>
@@ -30,7 +30,23 @@ const Education = () => {
                 <h2 className={styles.heady} >Udemy</h2>
                 <p>2021 - 2022 </p>
                 <p>Next.js Course</p>
-                <p>In-View</p>
+                <p>Certificate of Completion</p>
+            </div>
+        </div>
+    </div>
+    <div className={styles.over1}>
+    <div className={styles.third_div}>
+            <div className={styles.brac3}>
+                <h2 className={styles.heady} >Udemy</h2>
+                <p>2019 - 2021 </p>
+                <p>100 days of Python code</p>
+                <p>Certificate of Completion</p>
+            </div>
+            <div className={styles.brac4}>
+                <h2 className={styles.heady} >Udemy</h2>
+                <p>2021 - 2022 </p>
+                <p>Advanced Css crash course</p>
+                <p>Certificate of Completion</p>
             </div>
         </div>
     </div>

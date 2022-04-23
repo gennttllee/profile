@@ -28,6 +28,19 @@
     white);
 }
 
+.third_div {
+    animation: move-up;
+    position: relative;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    padding: 2rem;
+    margin-top: 2rem;
+    background-image: linear-gradient(to bottom right,
+    white,
+    rgba(212, 212, 212, 0.242),
+    white);
+}
+
 .over {
     border-radius: 1rem;
     box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.103);
@@ -87,14 +100,14 @@
         display: inline-block;
         height: fit-content;
         width: 45%;
-        margin: 0 1rem;
+        margin:  1rem;
         overflow: hidden;
     }
 
     .over1 {
         width: 40%;
         display: inline-block;
-        margin: 0 1rem;
+        margin:  1rem;
         height: fit-content;
         overflow: hidden;
     }
@@ -125,6 +138,14 @@
         margin: 0;
         height: fit-content;
     }
+
+    .third_div {
+        animation: move-up;
+        animation-duration: 1s;
+        margin: 0;
+        height: fit-content;
+    }
+
 
     .brac3 {
         margin: 2rem auto 2rem;
