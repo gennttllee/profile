@@ -103,7 +103,7 @@
     position: relative;
     animation: moving;
     animation-duration: 1s;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 .cover{

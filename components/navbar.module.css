@@ -179,7 +179,7 @@
     width: 75%;
     height: 100%;
     animation: slide-left;
-    animation-duration: 2s;
+    animation-duration: 0.9s;
     font-weight: 300;
 }
 

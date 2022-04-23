@@ -61,7 +61,7 @@
     position: relative;
     animation: moving;
     animation-duration: 1s;
-    animation-delay: 2s;
+    animation-delay: 1s;
     margin: 2rem 1rem;
     height: 50vh;
     overflow: hidden;

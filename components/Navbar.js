@@ -34,7 +34,7 @@ const Navbar = () => {
                 } else if (y.className === styles.slide_back && show===false){
                     y.className = styles.container
                 }
-            }, 500);
+            }, 600);
             y.className = styles.slide_back
         } else { y.className = styles.responsive }
     }
