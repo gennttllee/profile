@@ -1,0 +1,23 @@
+.projects {
+    margin: 1.5rem auto;
+    width: 19rem;
+    text-align: left;
+
+}
+
+.span{
+    color: red;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.p{
+    font-weight: 300;
+    margin: .7rem 0;
+}
+
+.target{
+    color: orange;
+    text-decoration: underline;
+    margin-bottom: 0;
+}

@@ -32,17 +32,18 @@
     text-align: center;
     animation: move-down;
     animation-duration: 2s;
-    animation-delay: 0.1s;
+    animation-delay: .1s;
 }
 
 @keyframes move-down {
     from {
-        top: -10rem;
-        color: rgb(107, 47, 3);
+        transform: scale(0);
+        opacity: 0;
     }
 
     to {
-        top: 0rem;
+        transform: scale(1);
+        opacity: 1;
     }
 }
 
@@ -94,11 +95,10 @@
     font-size: 1.3rem;
     outline: none;
     border: none;
-    border-radius: 20px;
 }
 
 .btn:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color:orange;
     box-shadow: none;
 }
 

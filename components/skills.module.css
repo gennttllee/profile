@@ -5,7 +5,7 @@
     overflow: hidden;
 }
 
-.divider{
+.divider {
     position: relative;
     animation: move-up;
     animation-duration: 1s;
@@ -13,27 +13,33 @@
     animation-delay: .1s;
 }
 
-.cover{
+.cover {
     margin: 0 auto 5rem;
     overflow: hidden;
 }
 
-.cover1{
+.cover1 {
     margin: 0 auto 5rem;
     overflow: hidden;
 }
 
-.divider1{
+.divider1 {
     position: relative;
     animation: move-up;
     animation-duration: 1s;
     overflow: hidden;
-    animation-delay: 1s;
 }
 
-@keyframes move-up{
-    from{bottom:-100rem}
-    to {bottom:0rem}
+@keyframes move-up {
+    from {
+        opacity: 0;
+        bottom: -10rem
+    }
+
+    to {
+        opacity: 1;
+        bottom: 0rem
+    }
 }
 
 .html {
@@ -259,34 +265,35 @@
 }
 
 @media screen and (min-width:800px) {
-    .divider{
+    .divider {
         animation: none;
     }
 
-    .cover{
+    .cover {
         width: 40%;
         display: inline-block;
         margin: 0 5%;
         overflow: hidden;
     }
 
-    .divider1{
+    .divider1 {
         animation: none;
     }
 
-    .cover1{
+    .cover1 {
         width: 40%;
         display: inline-block;
         margin: 0 5%;
         overflow: hidden;
     }
 
-    .jnr1{
+    .jnr1 {
         animation: move-right;
         animation-duration: 1s;
         position: relative;
         animation-delay: .5s;
     }
+
     .span1 {
         animation: move-right;
         animation-duration: 1s;
@@ -300,6 +307,7 @@
         position: relative;
         animation-delay: .6s;
     }
+
     .span2 {
         animation: move-right;
         animation-duration: 1s;
@@ -313,6 +321,7 @@
         position: relative;
         animation-delay: .7s;
     }
+
     .span3 {
         animation: move-right;
         animation-duration: 1s;
@@ -326,6 +335,7 @@
         position: relative;
         animation-delay: .8s;
     }
+
     .span4 {
         animation: move-right;
         animation-duration: 1s;
@@ -339,6 +349,7 @@
         position: relative;
         animation-delay: .9s;
     }
+
     .span5 {
         animation: move-right;
         animation-duration: 1s;
@@ -346,12 +357,13 @@
         animation-delay: .9s;
     }
 
-    .jnr6{
+    .jnr6 {
         animation: move-right;
         animation-duration: 1s;
         position: relative;
         animation-delay: .6s;
     }
+
     .span6 {
         animation: move-right;
         animation-duration: 1s;
@@ -359,12 +371,13 @@
         animation-delay: .6s;
     }
 
-    .jnr7{
+    .jnr7 {
         animation: move-right;
         animation-duration: 1s;
         position: relative;
         animation-delay: .7s;
     }
+
     .span7 {
         animation: move-right;
         animation-duration: 1s;
@@ -372,12 +385,13 @@
         animation-delay: .7s;
     }
 
-    .jnr8{
+    .jnr8 {
         animation: move-right;
         animation-duration: 1s;
         position: relative;
         animation-delay: .8s;
     }
+
     .span8 {
         animation: move-right;
         animation-duration: 1s;
@@ -385,12 +399,13 @@
         animation-delay: .8s;
     }
 
-    .jnr9{
+    .jnr9 {
         animation: move-right;
         animation-duration: 1s;
         position: relative;
         animation-delay: .9s;
     }
+
     .span9 {
         animation: move-right;
         animation-duration: 1s;
@@ -398,12 +413,13 @@
         animation-delay: .9s;
     }
 
-    .jnr10{
+    .jnr10 {
         animation: move-right;
         animation-duration: 1s;
         position: relative;
         animation-delay: .10s;
     }
+
     .span10 {
         animation: move-right;
         animation-duration: 1s;

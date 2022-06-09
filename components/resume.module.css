@@ -17,10 +17,12 @@
 
 @keyframes moving {
     from {
-        bottom: -100rem;
+        opacity: 0;
+        bottom: -10rem;
     }
 
     to {
+        opacity: 1;
         bottom: 0;
     }
 }
