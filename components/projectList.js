@@ -20,13 +20,6 @@ const projectList =[
         about : 'I built this App because i got tired of many note pad apps not including calculators.  This project takes user inputs, creates a local database and saves all input and calculations to a history folder',
         link : "https://shopper-gennttllee.vercel.app/"
     },
-    {
-        h1 : 'Kanye-Quotes',
-        image : '/static/mymy.jpg',
-        skills : 'React, API-integration, Git and Css',
-        about : 'a Kanye quotes app just because i love kanye',
-        link : "https://my-portfolio-wine-eight.vercel.app/"
-    },
 ]
 
 export  default projectList;
