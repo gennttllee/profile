@@ -24,9 +24,10 @@ const Forms = () => {
         }
     }, []);
 
+
     const submitted = (e) => {
         e.preventDefault();
-        emailjs.sendForm('markwilliamz1995@gmail.c', 'template_a2ul24s', e.target, 'jyIO1gciS2IyWyp9M')
+        emailjs.sendForm( 'markwilliamz1995@gmail.c', "template_a2ul24s", e.target, "jyIO1gciS2IyWyp9M")
             .then((result) => {
                 console.log(result.text);
                 alert('successful')

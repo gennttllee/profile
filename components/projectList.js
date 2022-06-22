@@ -1,5 +1,12 @@
 const projectList =[
     {
+        h1 : 'DJ Morris Makenzee',
+        image : '/static/morris.jpeg',
+        skills : 'react and Css',
+        about : 'DJ Morris Makenzee is a popular Nigerian dj and i happen to be the developer behind his portfolio website',
+        link : "https://morris.vercel.app/"
+    },
+    {
         h1 : 'Dev Hire',
         image : '/static/devhire.jpeg',
         skills : 'React, API integration, state management tool, Git and Css',
