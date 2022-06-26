@@ -12,7 +12,7 @@ const Forms = () => {
             setShow(true)
         } else if (window.scrollY < 3500 && window.innerWidth < 600) {
             setShow(false)
-        } else if (window.scrollY > 3700 && window.innerWidth < 600) {
+        } else if (window.scrollY > 3500 && window.innerWidth < 600) {
             setShow(true)
         } else { setShow(false) }
     }

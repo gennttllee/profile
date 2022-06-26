@@ -3,7 +3,6 @@ import Skills from './Skills'
 import Education from './Education'
 import Experience from './Experience'
 import { useState, useEffect } from 'react'
-import Pictures from './Pictures'
 
 const Resume = () => {
     const [show1, setShow1] = useState(false)
@@ -35,10 +34,6 @@ const Resume = () => {
         setBox(<Experience />)
     }
 
-    const btn4 = () => {
-        setBox(<Pictures />)
-    }
-
     return <div  className={ styles.container} id='resume'>
         <p  className={styles.p1} >EXPERIENCE</p>
         <h1 className={styles.h1} >My Resume</h1>
@@ -46,7 +41,6 @@ const Resume = () => {
             <button onClick={btn1} className={styles.btn}>Education</button>
             <button onClick={btn2} className={styles.btn}>Skills</button>
             <button onClick={btn3} className={styles.btn}>Experience</button>
-            <button onClick={btn4} className={styles.btn}>Pictures</button>
         </div>
         <div className={show1 ? styles.load_div : styles.nemesis}>
             {meme}
