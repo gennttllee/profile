@@ -4,9 +4,7 @@
 }
 
 .first_div {
-    animation: move-up;
-    position: relative;
-    animation-duration: 1s;
+
     padding: 2rem;
     margin-bottom: 2rem;
     background-image: linear-gradient(to bottom right,
@@ -16,9 +14,6 @@
 }
 
 .second_div {
-    animation: move-up;
-    position: relative;
-    animation-duration: 1s;
     padding: 2rem;
     margin-top: 2rem;
     background-image: linear-gradient(to bottom right,
@@ -28,9 +23,6 @@
 }
 
 .third_div {
-    animation: move-up;
-    position: relative;
-    animation-duration: 1s;
     padding: 2rem;
     margin-top: 2rem;
     background-image: linear-gradient(to bottom right,
@@ -47,18 +39,6 @@
 .over1 {
     border-radius: 1rem;
     box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.103);
-}
-
-@keyframes move-up {
-    from {
-        opacity: 0;
-        bottom: -10rem
-    }
-
-    to {
-        opacity: 1;
-        bottom: 0rem
-    }
 }
 
 .brac1 {
@@ -90,8 +70,6 @@
 
 @media only screen and (min-width:700px) {
     .first_div {
-        animation: move-left;
-        animation-duration: 1s;
         margin: 0;
         height: fit-content;
     }
@@ -112,44 +90,15 @@
         overflow: hidden;
     }
 
-    @keyframes move-right {
-        from {
-            opacity: 0;
-            left: -10rem
-        }
-
-        to {
-            opacity: 1;
-            left: 0
-        }
-    }
-
-    @keyframes move-left {
-        from {
-            opacity: 0;
-            right: -10rem
-        }
-
-        to {
-            opacity: 1;
-            right: 0
-        }
-    }
-
     .second_div {
-        animation: move-right;
-        animation-duration: 1s;
         margin: 0;
         height: fit-content;
     }
 
     .third_div {
-        animation: move-up;
-        animation-duration: 1s;
         margin: 0;
         height: fit-content;
     }
-
 
     .brac3 {
         margin: 2rem auto 2rem;

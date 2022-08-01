@@ -19,8 +19,6 @@
 }
 
 .span1 {
-    animation: move-down;
-    animation-duration: 1s;
     position: relative;
     text-align: center;
     display: block;
@@ -28,23 +26,7 @@
 
 .span2 {
     display: block;
-    position: relative;
     text-align: center;
-    animation: move-down;
-    animation-duration: 2s;
-    animation-delay: .1s;
-}
-
-@keyframes move-down {
-    from {
-        transform: scale(0);
-        opacity: 0;
-    }
-
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
 }
 
 .main_div {
