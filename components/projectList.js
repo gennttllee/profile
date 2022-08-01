@@ -11,7 +11,7 @@ const projectList =[
         image : '/static/e-commerce.jpeg',
         skills : 'Next.js, MongoDB, Git, Jwt token, Node.js, react, Paystack, Rest API,',
         about : 'A fullstack e-commerce platform with authentication, payment and admin dashboard',
-        link : "https://store-wine-zeta.vercel.app/Main"
+        link : "https://store-wine-zeta.vercel.app/"
     },
     {
         h1 : 'DJ Morris Makenzee',
