@@ -4,7 +4,7 @@ const projectList =[
         image : '/static/IMG_0284.jpg',
         skills : 'MongoDb, Express, React, Redux toolkit, Node, Google Auth, Jwt token, Rest API',
         about : 'A fullstack CRUD social media platform ',
-        link : "https://memory-git-main-gennttllee.vercel.app"
+        link : "https://memory-gennttllee.vercel.app/"
     },
     {
         h1 : 'E-commerce',
