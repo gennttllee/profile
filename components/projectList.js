@@ -1,5 +1,12 @@
 const projectList =[
     {
+        h1 : 'beefy',
+        image : '/static/Screenshot (8).png',
+        skills : 'React',
+        about : 'A crypto web application',
+        link : "https://beefy-nine.vercel.app/"
+    },
+    {
         h1 : 'Memories',
         image : '/static/IMG_0284.jpg',
         skills : 'MongoDb, Express, React, Redux toolkit, Node, Google Auth, Jwt token, Rest API',
