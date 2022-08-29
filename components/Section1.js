@@ -8,14 +8,14 @@ const Section1 = () => {
             <span className={styles.span1}>MARK</span>
             <span className={styles.span2}>WILLIAMS</span>
         </h1>
-        <div className={styles.main_div}>
-            <div className={styles.first_div}>
-                <p>I am a</p>
-            </div>
-            <div className={styles.second_div}>
-                <p className={styles.p1} >web developer</p>
-            </div>
-        </div>
+        <p className={styles.main_div}>
+            <span className={styles.first_div}>
+                <span>I am a</span>
+            </span>
+            <span className={styles.second_div}>
+                <span className={styles.p1} >web developer</span>
+            </span>
+        </p>
         <button className={styles.btn}>
             <a className={styles.tag} href='#forms'> Contact Me</a>
         </button>
