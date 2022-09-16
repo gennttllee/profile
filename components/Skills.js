@@ -22,37 +22,37 @@ const Skills = () => {
                 <div className={styles.div1}>
                     <div className={styles.jnr4}></div>
                 </div>
-                <p className={styles.html} >NEXT.JS <span className={styles.span5} >65%</span></p>
+                <p className={styles.html} >NEXT.JS <span className={styles.span5} >75%</span></p>
                 <div className={styles.div1}>
                     <div className={styles.jnr5}></div>
                 </div>
             </div>
         </div>
         <div className={styles.cover1}>
-        <div className={styles.divider1}>
-            <p className={styles.p1}> features</p>
-            <h1 className={styles.h1}>  Personal Attributes</h1>
-            <p className={styles.html}>Problem Solving <span className={styles.span6}>90%</span></p>
-            <div className={styles.div1}>
-                <div className={styles.jnr6}></div>
+            <div className={styles.divider1}>
+                <p className={styles.p1}> features</p>
+                <h1 className={styles.h1}>  Personal Attributes</h1>
+                <p className={styles.html}>Problem Solving <span className={styles.span6}>90%</span></p>
+                <div className={styles.div1}>
+                    <div className={styles.jnr6}></div>
+                </div>
+                <p className={styles.html}>Multitasking <span className={styles.span7}>90%</span></p>
+                <div className={styles.div1}>
+                    <div className={styles.jnr7}></div>
+                </div>
+                <p className={styles.html} >Punctuality <span className={styles.span8} >80%</span></p>
+                <div className={styles.div1}>
+                    <div className={styles.jnr8}></div>
+                </div>
+                <p className={styles.html} >Hard-work <span className={styles.span9} >85%</span></p>
+                <div className={styles.div1}>
+                    <div className={styles.jnr9}></div>
+                </div>
+                <p className={styles.html} >Team Leader <span className={styles.span10} >70%</span></p>
+                <div className={styles.div1}>
+                    <div className={styles.jnr10}></div>
+                </div>
             </div>
-            <p className={styles.html}>Multitasking <span className={styles.span7}>90%</span></p>
-            <div className={styles.div1}>
-                <div className={styles.jnr7}></div>
-            </div>
-            <p className={styles.html} >Punctuality <span className={styles.span8} >80%</span></p>
-            <div className={styles.div1}>
-                <div className={styles.jnr8}></div>
-            </div>
-            <p className={styles.html} >Hard-work <span className={styles.span9} >85%</span></p>
-            <div className={styles.div1}>
-                <div className={styles.jnr9}></div>
-            </div>
-            <p className={styles.html} >Team Leader <span className={styles.span10} >70%</span></p>
-            <div className={styles.div1}>
-                <div className={styles.jnr10}></div>
-            </div>
-        </div>
         </div>
     </div>
 }

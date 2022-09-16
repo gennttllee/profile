@@ -4,9 +4,7 @@ import styles from '../components/projects.module.css';
 export default function Projects(props) {
     return (
         <div className={styles.projects}>
-            <div>
-                <Image src={props.image} alt='shopper' width={250} height={200} />
-            </div>
+            <Image src={props.image} alt='shopper' width={400} height={250} />
             <p className={styles.p}> <span className={styles.span}> Name :</span> {props.name}</p>
             <p className={styles.p}> <span className={styles.span}>About :</span>  {props.about}</p>
             <p className={styles.p}> <span className={styles.span}>Skills :</span> {props.skills}</p>

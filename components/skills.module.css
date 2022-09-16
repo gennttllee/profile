@@ -152,7 +152,7 @@
 
 .jnr5 {
     background-image: linear-gradient(to right, white, red);
-    width: 60%;
+    width: 75%;
     height: 6px;
     animation: move-right;
     animation-duration: 1s;
@@ -162,7 +162,7 @@
 
 .span5 {
     float: right;
-    margin-right: 40%;
+    margin-right: 25%;
     animation: move-right;
     animation-duration: 1s;
     position: relative;
